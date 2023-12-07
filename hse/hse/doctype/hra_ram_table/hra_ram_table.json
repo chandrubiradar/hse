@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-29 20:22:32.733160",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "severity",
+  "people",
+  "assets",
+  "community",
+  "environment",
+  "a_never_heard_in_the_industry",
+  "b__heard_of_in_the_industry",
+  "c_has_happened_in_organization",
+  "d_has_happened",
+  "has_happened_more_than_once_per_year_at_the_location"
+ ],
+ "fields": [
+  {
+   "fieldname": "severity",
+   "fieldtype": "Data",
+   "label": "SEVERITY"
+  },
+  {
+   "fieldname": "people",
+   "fieldtype": "Data",
+   "label": "People "
+  },
+  {
+   "fieldname": "assets",
+   "fieldtype": "Data",
+   "label": "Assets"
+  },
+  {
+   "fieldname": "community",
+   "fieldtype": "Data",
+   "label": "Community"
+  },
+  {
+   "fieldname": "environment",
+   "fieldtype": "Data",
+   "label": "Environment"
+  },
+  {
+   "fieldname": "a_never_heard_in_the_industry",
+   "fieldtype": "Color",
+   "label": "(A) - Never heard in the industry"
+  },
+  {
+   "fieldname": "b__heard_of_in_the_industry",
+   "fieldtype": "Color",
+   "label": "(B) - Heard of in the industry"
+  },
+  {
+   "fieldname": "c_has_happened_in_organization",
+   "fieldtype": "Color",
+   "label": "(C) -  Has happened in organization or more than once per year in the Industry"
+  },
+  {
+   "fieldname": "d_has_happened",
+   "fieldtype": "Color",
+   "label": "(D) - Has happened at the location or more than once a year in the organization."
+  },
+  {
+   "fieldname": "has_happened_more_than_once_per_year_at_the_location",
+   "fieldtype": "Color",
+   "label": "(E) - Has happened more than once per year at the location"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-29 20:34:48.266623",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "HRA RAM Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

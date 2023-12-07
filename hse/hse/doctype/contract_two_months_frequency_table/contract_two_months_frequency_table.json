@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-25 20:00:06.765631",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "target_column",
+  "1st",
+  "2nd",
+  "3rd",
+  "4th",
+  "5th",
+  "6th",
+  "actual_column",
+  "actual_1st",
+  "actual_2nd",
+  "actual_3rd",
+  "actual_4th",
+  "actual_5th",
+  "actual_6th"
+ ],
+ "fields": [
+  {
+   "fieldname": "target_column",
+   "fieldtype": "Column Break",
+   "label": "<u><b>Target</b></u>"
+  },
+  {
+   "default": "0",
+   "fieldname": "1st",
+   "fieldtype": "Data",
+   "label": "1st"
+  },
+  {
+   "default": "0",
+   "fieldname": "2nd",
+   "fieldtype": "Data",
+   "label": "2nd"
+  },
+  {
+   "default": "0",
+   "fieldname": "3rd",
+   "fieldtype": "Data",
+   "label": "3rd"
+  },
+  {
+   "default": "0",
+   "fieldname": "4th",
+   "fieldtype": "Data",
+   "label": "4th"
+  },
+  {
+   "default": "0",
+   "fieldname": "5th",
+   "fieldtype": "Data",
+   "label": "5th"
+  },
+  {
+   "default": "0",
+   "fieldname": "6th",
+   "fieldtype": "Data",
+   "label": "6th"
+  },
+  {
+   "fieldname": "actual_column",
+   "fieldtype": "Column Break",
+   "label": "<u><b>Actual</b></u>"
+  },
+  {
+   "default": "0",
+   "fieldname": "actual_1st",
+   "fieldtype": "Data",
+   "label": "1st"
+  },
+  {
+   "default": "0",
+   "fieldname": "actual_2nd",
+   "fieldtype": "Data",
+   "label": "2nd"
+  },
+  {
+   "default": "0",
+   "fieldname": "actual_3rd",
+   "fieldtype": "Data",
+   "label": "3rd"
+  },
+  {
+   "default": "0",
+   "fieldname": "actual_4th",
+   "fieldtype": "Data",
+   "label": "4th"
+  },
+  {
+   "default": "0",
+   "fieldname": "actual_5th",
+   "fieldtype": "Data",
+   "label": "5th"
+  },
+  {
+   "default": "0",
+   "fieldname": "actual_6th",
+   "fieldtype": "Data",
+   "label": "6th"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-06 18:00:59.361805",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "Contract Two Months Frequency Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

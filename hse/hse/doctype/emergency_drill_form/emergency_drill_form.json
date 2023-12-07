@@ -1,0 +1,152 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{location}-{#####}-",
+ "creation": "2023-08-25 16:36:50.330107",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "drill_type",
+  "date",
+  "faciliatorobserver",
+  "coulmn_br",
+  "location",
+  "time",
+  "no_of_pob",
+  "time_and_events",
+  "events",
+  "remarks",
+  "html_101",
+  "text_100",
+  "html_102",
+  "text_101",
+  "html_103",
+  "text_102",
+  "prepaired_by",
+  "name1"
+ ],
+ "fields": [
+  {
+   "fieldname": "drill_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Drill Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "faciliatorobserver",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Faciliator/Observer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "coulmn_br",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location",
+   "reqd": 1
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Time"
+  },
+  {
+   "fieldname": "no_of_pob",
+   "fieldtype": "Data",
+   "label": "No. of POB"
+  },
+  {
+   "fieldname": "time_and_events",
+   "fieldtype": "Section Break",
+   "label": "Time & Events"
+  },
+  {
+   "fieldname": "events",
+   "fieldtype": "Table",
+   "label": "Events",
+   "options": "Emergency Drill Table"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "html_101",
+   "fieldtype": "HTML",
+   "options": "Highlights"
+  },
+  {
+   "fieldname": "text_100",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "html_102",
+   "fieldtype": "HTML",
+   "options": "Lowlights"
+  },
+  {
+   "fieldname": "text_101",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "html_103",
+   "fieldtype": "HTML",
+   "options": "Rooms of improvement"
+  },
+  {
+   "fieldname": "text_102",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "prepaired_by",
+   "fieldtype": "Link",
+   "label": "Prepared By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "prepaired_by.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-25 22:14:42.593235",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "Emergency Drill Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

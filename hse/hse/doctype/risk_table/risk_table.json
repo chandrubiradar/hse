@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-28 16:40:09.822878",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "risk",
+  "sev",
+  "prob",
+  "pr",
+  "control"
+ ],
+ "fields": [
+  {
+   "fieldname": "sev",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Severity Level(SEV)",
+   "options": "Zero(0)\nSlight(1)\nMinor(2)\nModerate(3)\nMajor(4)\nMassive(5)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pr",
+   "fieldtype": "Data",
+   "label": "Potential Risk(PR)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "control",
+   "fieldtype": "Link",
+   "label": "Control",
+   "options": "Risk Control Type"
+  },
+  {
+   "fieldname": "risk",
+   "fieldtype": "Small Text",
+   "label": "Hazard Description/Identification"
+  },
+  {
+   "fieldname": "prob",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Probability/Likelihood(PROB))",
+   "options": "Rare(A)\nUnlikly(B)\nModerate(C)\nLikely(D)\nOften(E)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-28 19:41:53.510130",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "Risk table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

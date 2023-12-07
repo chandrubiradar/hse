@@ -1,0 +1,43 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-29 19:45:13.630489",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "exposure_group",
+  "manual_handling",
+  "posture_long_term_awkward_posture_of_the_shoulder_neck_and_back"
+ ],
+ "fields": [
+  {
+   "fieldname": "manual_handling",
+   "fieldtype": "Select",
+   "label": "Manual Handling",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "exposure_group",
+   "fieldtype": "Data",
+   "label": "EXPOSURE GROUP"
+  },
+  {
+   "fieldname": "posture_long_term_awkward_posture_of_the_shoulder_neck_and_back",
+   "fieldtype": "Select",
+   "label": "Posture: long-term awkward posture of the shoulder, neck and back",
+   "options": "\nY\nN"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-29 19:46:36.427596",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "HRA OMIC Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

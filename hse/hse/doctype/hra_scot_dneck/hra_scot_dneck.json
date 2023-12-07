@@ -1,0 +1,144 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: HRA SCOT Dneck - {####}",
+ "creation": "2023-08-28 15:24:13.821505",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "contract_number",
+  "contract_holder",
+  "won",
+  "column_break_4",
+  "contract_description",
+  "location_or_asset",
+  "scope",
+  "section_break_8",
+  "hra_team",
+  "section_break_10",
+  "hra_objectives",
+  "business_partner",
+  "column_break_11",
+  "hra_reviewed_and_accepted",
+  "name1",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "HRA SCOT Dneck",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "contract_number",
+   "fieldtype": "Data",
+   "label": "Contract Number"
+  },
+  {
+   "fieldname": "contract_holder",
+   "fieldtype": "Data",
+   "label": "Contract Holder"
+  },
+  {
+   "fieldname": "contract_description",
+   "fieldtype": "Data",
+   "label": "Contract Description"
+  },
+  {
+   "fieldname": "location_or_asset",
+   "fieldtype": "Data",
+   "label": "Location or Asset"
+  },
+  {
+   "fieldname": "scope",
+   "fieldtype": "Small Text",
+   "label": "Scope"
+  },
+  {
+   "fieldname": "hra_objectives",
+   "fieldtype": "Small Text",
+   "label": "HRA Objectives"
+  },
+  {
+   "fieldname": "business_partner",
+   "fieldtype": "Data",
+   "label": "Business Partner"
+  },
+  {
+   "fieldname": "hra_reviewed_and_accepted",
+   "fieldtype": "Link",
+   "label": "HRA Reviewed and Accepted",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "hra_team",
+   "fieldtype": "Table",
+   "label": "HRA Team",
+   "options": "Employee Details"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "hra_reviewed_and_accepted.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "won",
+   "fieldtype": "Link",
+   "label": "WON",
+   "options": "Project"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-10-09 19:05:55.813652",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "HRA SCOT Dneck",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

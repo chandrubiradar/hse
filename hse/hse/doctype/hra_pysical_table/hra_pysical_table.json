@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-29 18:38:55.436603",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "exposure_group",
+  "ultraviolet_uv_light_wavelength_100nm__400nm",
+  "heat_stress_hot_temperature_differentials",
+  "noise",
+  "hand_arm_vibration"
+ ],
+ "fields": [
+  {
+   "fieldname": "exposure_group",
+   "fieldtype": "Data",
+   "label": "EXPOSURE GROUP"
+  },
+  {
+   "fieldname": "ultraviolet_uv_light_wavelength_100nm__400nm",
+   "fieldtype": "Select",
+   "label": "Ultraviolet (UV) Light: Wavelength 100nm - 400nm",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "heat_stress_hot_temperature_differentials",
+   "fieldtype": "Select",
+   "label": "Heat Stress, Hot Temperature Differentials",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "noise",
+   "fieldtype": "Select",
+   "label": "Noise",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "hand_arm_vibration",
+   "fieldtype": "Select",
+   "label": "Hand, Arm Vibration",
+   "options": "\nY\nN"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-29 19:47:03.928099",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "HRA Pysical Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

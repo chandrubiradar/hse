@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{name1}",
+ "creation": "2023-08-30 15:29:23.195003",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "desc",
+  "oxygen_",
+  "explosive_or_flammable_",
+  "airborne_concentration_of_toxic_substance",
+  "allowed_work_scopes",
+  "emergency_rescue_team_minimum_staffing_requirement"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "oxygen_",
+   "fieldtype": "Small Text",
+   "label": "Oxygen %"
+  },
+  {
+   "fieldname": "explosive_or_flammable_",
+   "fieldtype": "Small Text",
+   "label": "Explosive Or Flammable %"
+  },
+  {
+   "fieldname": "airborne_concentration_of_toxic_substance",
+   "fieldtype": "Small Text",
+   "label": "Airborne concentration of Toxic substance"
+  },
+  {
+   "fieldname": "allowed_work_scopes",
+   "fieldtype": "Small Text",
+   "label": "Allowed Work Scopes"
+  },
+  {
+   "fieldname": "emergency_rescue_team_minimum_staffing_requirement",
+   "fieldtype": "Small Text",
+   "label": "Emergency Rescue Team Minimum Staffing Requirement"
+  },
+  {
+   "fieldname": "desc",
+   "fieldtype": "Data",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-30 17:32:43.514096",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "CSE Class",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

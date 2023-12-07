@@ -1,0 +1,43 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-08 13:03:27.861487",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "task",
+  "activities",
+  "frequency"
+ ],
+ "fields": [
+  {
+   "fieldname": "frequency",
+   "fieldtype": "Link",
+   "label": "Frequency",
+   "options": "Action Party and Frequency"
+  },
+  {
+   "fieldname": "task",
+   "fieldtype": "Link",
+   "label": "Task",
+   "options": "Contract Plan Tasks"
+  },
+  {
+   "fieldname": "activities",
+   "fieldtype": "Small Text",
+   "label": "Activities"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-10-26 18:49:07.902543",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "Audit Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

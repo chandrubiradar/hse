@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-25 16:16:40.476535",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "target_column",
+  "1st_half",
+  "2nd_half",
+  "actual_column",
+  "actual_1st_half",
+  "actual_2nd_half"
+ ],
+ "fields": [
+  {
+   "fieldname": "target_column",
+   "fieldtype": "Column Break",
+   "label": "<u><b>Target</b></u>"
+  },
+  {
+   "default": "0",
+   "fieldname": "1st_half",
+   "fieldtype": "Data",
+   "label": "1st Half"
+  },
+  {
+   "default": "0",
+   "fieldname": "2nd_half",
+   "fieldtype": "Data",
+   "label": "2nd Half"
+  },
+  {
+   "fieldname": "actual_column",
+   "fieldtype": "Column Break",
+   "label": "<u><b>Actual</b></u>"
+  },
+  {
+   "default": "0",
+   "fieldname": "actual_1st_half",
+   "fieldtype": "Data",
+   "label": "1st Half"
+  },
+  {
+   "default": "0",
+   "fieldname": "actual_2nd_half",
+   "fieldtype": "Data",
+   "label": "2nd Half"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-06 17:52:43.370400",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "Contract Six Months Frequency Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

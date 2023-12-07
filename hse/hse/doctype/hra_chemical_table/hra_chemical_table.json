@@ -1,0 +1,196 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-29 18:42:12.319637",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "exposure_group",
+  "crude_oil__sweet",
+  "benzene_71432",
+  "hydrocarbons_voc_total_vapour",
+  "hydrogen_sulfide_containing_streams",
+  "column_break_6",
+  "lubricating_oils_and_c16__c35_hydrocarbons_includes_oil_mist",
+  "diesel_exhaust_fumes",
+  "argon",
+  "concrete",
+  "corroless_cci_400",
+  "section_break_12",
+  "molykote_1000",
+  "intergard_475_light_grey_part_a",
+  "intershield_4000usp_part_a",
+  "intershield_4000usp_red_part_b",
+  "nterthane_990_part_b",
+  "column_break_18",
+  "nterthane_990_white_part_a",
+  "intergard_475_part_b",
+  "nterseal_670hs_part_b",
+  "international_thinner_eqpt_cleaner_gta220",
+  "section_break_23",
+  "international_thinner_eqpt_cleaner_gta713",
+  "international_thinner_eqpt_cleaner_gta822",
+  "international_thinner_eqpt_cleaner_gta007"
+ ],
+ "fields": [
+  {
+   "fieldname": "exposure_group",
+   "fieldtype": "Data",
+   "label": "EXPOSURE GROUP"
+  },
+  {
+   "fieldname": "crude_oil__sweet",
+   "fieldtype": "Select",
+   "label": "Crude Oil - Sweet",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "benzene_71432",
+   "fieldtype": "Select",
+   "label": "Benzene (71-43-2)",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "hydrocarbons_voc_total_vapour",
+   "fieldtype": "Select",
+   "label": "Hydrocarbons, VOC (Total Vapour)",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "hydrogen_sulfide_containing_streams",
+   "fieldtype": "Select",
+   "label": "Hydrogen sulfide containing streams with H2S < 1000 ppm mole (600 mg/kg) and < 100 ppm vapour space (7783-06-4)",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "lubricating_oils_and_c16__c35_hydrocarbons_includes_oil_mist",
+   "fieldtype": "Select",
+   "label": "Lubricating Oils and C16 - C35 Hydrocarbons (Includes Oil Mist)",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "diesel_exhaust_fumes",
+   "fieldtype": "Select",
+   "label": "Diesel Exhaust Fumes",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "argon",
+   "fieldtype": "Select",
+   "label": "Argon",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "concrete",
+   "fieldtype": "Select",
+   "label": "Concrete",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "corroless_cci_400",
+   "fieldtype": "Select",
+   "label": "Corroless CCI 400",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "molykote_1000",
+   "fieldtype": "Select",
+   "label": "Molykote 1000",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "intergard_475_light_grey_part_a",
+   "fieldtype": "Select",
+   "label": "Intergard 475 Light Grey Part A",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "intershield_4000usp_part_a",
+   "fieldtype": "Select",
+   "label": "INTERSHIELD 4000USP PART A",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "intershield_4000usp_red_part_b",
+   "fieldtype": "Select",
+   "label": "INTERSHIELD 4000USP RED PART B",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "nterthane_990_part_b",
+   "fieldtype": "Select",
+   "label": "NTERTHANE 990 PART B",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "nterthane_990_white_part_a",
+   "fieldtype": "Select",
+   "label": "NTERTHANE 990 WHITE PART A",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "intergard_475_part_b",
+   "fieldtype": "Select",
+   "label": "INTERGARD 475 PART B",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "nterseal_670hs_part_b",
+   "fieldtype": "Select",
+   "label": "NTERSEAL 670HS PART B",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "international_thinner_eqpt_cleaner_gta220",
+   "fieldtype": "Select",
+   "label": "INTERNATIONAL THINNER-EQPT CLEANER GTA220",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "international_thinner_eqpt_cleaner_gta713",
+   "fieldtype": "Select",
+   "label": "INTERNATIONAL THINNER-EQPT CLEANER GTA713",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "international_thinner_eqpt_cleaner_gta822",
+   "fieldtype": "Select",
+   "label": "INTERNATIONAL THINNER-EQPT CLEANER GTA822",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "international_thinner_eqpt_cleaner_gta007",
+   "fieldtype": "Select",
+   "label": "INTERNATIONAL THINNER-EQPT CLEANER GTA007",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-29 19:46:50.317323",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "HRA Chemical Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

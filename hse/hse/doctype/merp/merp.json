@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:MERP - {####}",
+ "creation": "2023-08-28 17:50:10.499945",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "document_no",
+  "contract_title",
+  "won",
+  "column_break_3",
+  "work_scope",
+  "location",
+  "section_break_6",
+  "prepared_by",
+  "section_break_8",
+  "reviewed_by",
+  "section_break_10",
+  "approved_by",
+  "section_break_12",
+  "agreed_by",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "document_no",
+   "fieldtype": "Data",
+   "label": "Document No"
+  },
+  {
+   "fieldname": "contract_title",
+   "fieldtype": "Data",
+   "label": "Contract Title"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "work_scope",
+   "fieldtype": "Small Text",
+   "label": "Work Scope"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break",
+   "label": "Prepared By"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Table",
+   "options": "Prepared By Table"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break",
+   "label": "Reviewed By"
+  },
+  {
+   "fieldname": "reviewed_by",
+   "fieldtype": "Table",
+   "options": "Reviewed By Table"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break",
+   "label": "Approved By"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Table",
+   "options": "Approved By Table"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break",
+   "label": "Agreed By"
+  },
+  {
+   "fieldname": "agreed_by",
+   "fieldtype": "Table",
+   "options": "Agreed By Table"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "MERP",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "won",
+   "fieldtype": "Link",
+   "label": "WON",
+   "options": "Project"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-10-09 19:05:21.605158",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "MERP",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

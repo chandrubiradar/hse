@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: Procedure Document - {####}",
+ "creation": "2023-09-07 18:44:43.574885",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "document_name",
+  "revision_no",
+  "contract",
+  "column_break_3",
+  "date_created",
+  "date_last_updated",
+  "section_break_6",
+  "table_2"
+ ],
+ "fields": [
+  {
+   "fieldname": "document_name",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "revision_no",
+   "fieldtype": "Data",
+   "label": "Revision No"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_created",
+   "fieldtype": "Date",
+   "label": "Date Created"
+  },
+  {
+   "fieldname": "date_last_updated",
+   "fieldtype": "Date",
+   "label": "Date Last Updated"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_2",
+   "fieldtype": "Table",
+   "options": "Procedure and Forms Table"
+  },
+  {
+   "fieldname": "contract",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Contract",
+   "options": "Contract"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-11 17:45:37.414943",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "Procedure Documet",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

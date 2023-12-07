@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-01 20:45:43.782115",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "actions",
+  "action_party",
+  "rating",
+  "target_date",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "actions",
+   "fieldtype": "Data",
+   "label": "Actions"
+  },
+  {
+   "fieldname": "action_party",
+   "fieldtype": "Data",
+   "label": "Action Party"
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Data",
+   "label": "Rating"
+  },
+  {
+   "fieldname": "target_date",
+   "fieldtype": "Date",
+   "label": "Target Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nOpen\nClosed"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-09-01 20:45:43.782115",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "Recommendations Action Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

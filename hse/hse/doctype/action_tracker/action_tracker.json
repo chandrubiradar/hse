@@ -1,0 +1,146 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{action_id}",
+ "creation": "2023-08-25 19:08:51.833442",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "action_id",
+  "status1",
+  "percent",
+  "cl_br",
+  "entry_date",
+  "target_date",
+  "date_closed",
+  "sec_break",
+  "description",
+  "action_initiator",
+  "action_initiator_name",
+  "cl_br1",
+  "reference",
+  "action_owner",
+  "action_owner_name",
+  "sec_break2",
+  "update1"
+ ],
+ "fields": [
+  {
+   "fieldname": "action_id",
+   "fieldtype": "Data",
+   "label": "Action Id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cl_br",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "entry_date",
+   "fieldtype": "Date",
+   "label": "Entry Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sec_break",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description Of Action"
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Small Text",
+   "label": "Reference"
+  },
+  {
+   "fieldname": "action_initiator",
+   "fieldtype": "Link",
+   "label": "Action Initiator",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "action_owner",
+   "fieldtype": "Link",
+   "label": "Action Owner",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "cl_br1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_date",
+   "fieldtype": "Date",
+   "label": "Target Date"
+  },
+  {
+   "fieldname": "sec_break2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.status1==\"Closed\"",
+   "fieldname": "date_closed",
+   "fieldtype": "Date",
+   "label": "Date Closed"
+  },
+  {
+   "fieldname": "status1",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Open\nClosed",
+   "reqd": 1
+  },
+  {
+   "fieldname": "update1",
+   "fieldtype": "Small Text",
+   "label": "Update"
+  },
+  {
+   "fetch_from": "action_initiator.employee_name",
+   "fieldname": "action_initiator_name",
+   "fieldtype": "Data",
+   "label": "Action Initiator Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "action_owner.employee_name",
+   "fieldname": "action_owner_name",
+   "fieldtype": "Data",
+   "label": "Action Owner Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "percent",
+   "fieldtype": "Percent",
+   "label": "Percentage"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-25 20:20:02.693387",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "Action Tracker",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

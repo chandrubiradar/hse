@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-30 15:06:01.121447",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "rescuer",
+  "name1",
+  "company",
+  "con_sp",
+  "scba",
+  "cse",
+  "firstaid"
+ ],
+ "fields": [
+  {
+   "fieldname": "rescuer",
+   "fieldtype": "Link",
+   "label": "Rescuer",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "rescuer.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "rescuer.company",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "default": "0",
+   "fieldname": "con_sp",
+   "fieldtype": "Check",
+   "label": "Confined Space Training Valid?"
+  },
+  {
+   "default": "0",
+   "fieldname": "scba",
+   "fieldtype": "Check",
+   "label": "SCBA Training Valid"
+  },
+  {
+   "default": "0",
+   "fieldname": "cse",
+   "fieldtype": "Check",
+   "label": "CSE General Rescue Training Valid?"
+  },
+  {
+   "default": "0",
+   "fieldname": "firstaid",
+   "fieldtype": "Check",
+   "label": "First Aid Training Valid?"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-30 15:10:26.324553",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "Rescuer  List",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,166 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{frequency}-{####}",
+ "creation": "2023-10-20 20:05:06.184360",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "task",
+  "frequency",
+  "column_break_3",
+  "activities",
+  "action_party",
+  "section_break_6",
+  "monthly",
+  "quarterly",
+  "as_or_when",
+  "per_pax_per_month",
+  "every_6_months",
+  "every_2_months",
+  "section_break_8",
+  "yearly_target_month",
+  "target_month",
+  "column_break_10",
+  "yearly_actual_month",
+  "actual_month"
+ ],
+ "fields": [
+  {
+   "fieldname": "action_party",
+   "fieldtype": "Table MultiSelect",
+   "label": "Action Party",
+   "options": "Assignee"
+  },
+  {
+   "fieldname": "task",
+   "fieldtype": "Link",
+   "label": "Task",
+   "options": "Contract Plan Tasks"
+  },
+  {
+   "depends_on": "eval:doc.frequency == 'Monthly' || doc.frequency == 'Quarterly' || doc.frequency == 'As/When Required' || doc.frequency == '1 per pax per month' || doc.frequency == 'Every 6 Months' || doc.frequency == 'Every 2 Months'",
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "frequency",
+   "fieldtype": "Select",
+   "label": "Frequency",
+   "options": "\nMonthly\nQuarterly\nYearly\nAs/When Required\n1 per pax per month\nEvery 6 Months\nEvery 2 Months\nSpecific Month"
+  },
+  {
+   "depends_on": "eval:doc.frequency == 'Monthly'",
+   "fieldname": "monthly",
+   "fieldtype": "Table",
+   "label": "<b>Monthly<b></b></b>",
+   "options": "Contract Monthly Frequency Table"
+  },
+  {
+   "depends_on": "eval:doc.frequency == 'Quarterly'",
+   "fieldname": "quarterly",
+   "fieldtype": "Table",
+   "label": "<b>Quarterly<b></b></b>",
+   "options": "Contract Quarterly Frequency Table"
+  },
+  {
+   "depends_on": "eval:doc.frequency == 'Yearly' || doc.frequency == 'Specific Month'",
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.frequency == 'Yearly'",
+   "fieldname": "yearly_target_month",
+   "fieldtype": "Select",
+   "label": "Yearly Target Month",
+   "options": "\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.frequency == 'Yearly' ",
+   "fieldname": "yearly_actual_month",
+   "fieldtype": "Select",
+   "label": "Yearly Actual Month",
+   "options": "\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
+  },
+  {
+   "depends_on": "eval:doc.frequency == 'As/When Required'",
+   "fieldname": "as_or_when",
+   "fieldtype": "Table",
+   "label": "<b>As/When Required<b></b></b>",
+   "options": "Contract As Required Frequency Table"
+  },
+  {
+   "depends_on": "eval:doc.frequency == '1 per pax per month'",
+   "fieldname": "per_pax_per_month",
+   "fieldtype": "Table",
+   "label": "<b>Per Pax Per Month<b></b></b>",
+   "options": "Contract Pax Per Month Frequency Table"
+  },
+  {
+   "depends_on": "eval:doc.frequency == 'Every 6 Months'",
+   "fieldname": "every_6_months",
+   "fieldtype": "Table",
+   "label": "<b>Every 6 Months<b></b></b>",
+   "options": "Contract Six Months Frequency Table"
+  },
+  {
+   "depends_on": "eval:doc.frequency == 'Every 2 Months'",
+   "fieldname": "every_2_months",
+   "fieldtype": "Table",
+   "label": "<b>Every 2 Months<b></b></b>",
+   "options": "Contract Two Months Frequency Table"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.frequency == 'Specific Month' ",
+   "fieldname": "target_month",
+   "fieldtype": "Select",
+   "label": "Target Month",
+   "options": "\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
+  },
+  {
+   "depends_on": "eval:doc.frequency == 'Specific Month'",
+   "fieldname": "actual_month",
+   "fieldtype": "Select",
+   "label": "Actual Month",
+   "options": "\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
+  },
+  {
+   "fieldname": "activities",
+   "fieldtype": "Data",
+   "label": "Activities"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-27 22:02:19.921342",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "Action Party and Frequency",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "frequency"
+}

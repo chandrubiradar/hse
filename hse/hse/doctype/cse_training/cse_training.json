@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "CSE-Training.###",
+ "creation": "2023-08-30 19:27:35.662174",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cse_training_table",
+  "csrp"
+ ],
+ "fields": [
+  {
+   "fieldname": "cse_training_table",
+   "fieldtype": "Table",
+   "label": "CSE Training Table",
+   "options": "CSE Training Table"
+  },
+  {
+   "fieldname": "csrp",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "csrp",
+   "options": "Confined Space Rescue Plan"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-30 20:54:59.565284",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "CSE Training",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-29 19:47:56.323050",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "exposure_group",
+  "infectious_and_venemous_animal_bites",
+  "insects_bitesstings",
+  "food_and_water_borne_pathogens",
+  "column_break_5",
+  "hiv_virus",
+  "hepatitis_virus_b_c_or_unspecified_hepatitis_virus",
+  "covid19",
+  "psychological_hazards_and_stress"
+ ],
+ "fields": [
+  {
+   "fieldname": "infectious_and_venemous_animal_bites",
+   "fieldtype": "Select",
+   "label": "Infectious and venemous animal bites",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "insects_bitesstings",
+   "fieldtype": "Select",
+   "label": "Insects bites/stings",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "food_and_water_borne_pathogens",
+   "fieldtype": "Select",
+   "label": "Food and water borne pathogens",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "hiv_virus",
+   "fieldtype": "Select",
+   "label": "HIV Virus",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "hepatitis_virus_b_c_or_unspecified_hepatitis_virus",
+   "fieldtype": "Select",
+   "label": "Hepatitis Virus B, C or Unspecified Hepatitis Virus",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "covid19",
+   "fieldtype": "Select",
+   "label": "COVID-19",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "psychological_hazards_and_stress",
+   "fieldtype": "Select",
+   "label": "Psychological Hazards and Stress",
+   "options": "\nY\nN"
+  },
+  {
+   "fieldname": "exposure_group",
+   "fieldtype": "Data",
+   "label": "EXPOSURE GROUP"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-29 19:50:44.843379",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "HRA BIOLOGICAL Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

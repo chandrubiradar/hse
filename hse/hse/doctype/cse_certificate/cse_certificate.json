@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "CSE-Certificate.#####",
+ "creation": "2023-09-01 18:16:52.690619",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "confined_space",
+  "certificate",
+  "exp_date",
+  "emp",
+  "cl_br",
+  "description",
+  "emp_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "certificate",
+   "fieldtype": "Select",
+   "label": "Certificate Name",
+   "options": "\nConfined Space Training\nSCBA Training\nCSE General Rescue Training\nFirst Aid Training"
+  },
+  {
+   "fieldname": "exp_date",
+   "fieldtype": "Date",
+   "label": "Certificate Expiry Date"
+  },
+  {
+   "fieldname": "emp",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "emp.employee_name",
+   "fieldname": "emp_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "cl_br",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "confined_space",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Confined Space",
+   "options": "Confined Space Rescue Plan"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-06 20:41:31.152386",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "CSE Certificate",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

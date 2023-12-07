@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{contract}-{month}-{year}-{####}",
+ "creation": "2023-09-08 18:27:08.510679",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "contract",
+  "contract_number",
+  "month",
+  "column_break_4",
+  "date",
+  "reporting_department",
+  "year",
+  "monthly_manhours_section",
+  "table",
+  "total_ot",
+  "total_absences",
+  "total_manhours"
+ ],
+ "fields": [
+  {
+   "fieldname": "contract",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Contract",
+   "options": "Contract",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contract_number",
+   "fieldtype": "Data",
+   "label": "Contract Number"
+  },
+  {
+   "depends_on": "eval:doc.contract",
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Month",
+   "options": "\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "reporting_department",
+   "fieldtype": "Link",
+   "label": "Reporting Department",
+   "options": "Department"
+  },
+  {
+   "depends_on": "eval:doc.contract",
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "label": "Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "monthly_manhours_section",
+   "fieldtype": "Section Break",
+   "label": "Monthly Manhours"
+  },
+  {
+   "fieldname": "table",
+   "fieldtype": "Table",
+   "options": "Manhour Table"
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "fieldname": "total_manhours",
+   "fieldtype": "Float",
+   "label": "Total Manhours"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_ot",
+   "fieldtype": "Float",
+   "label": "Total Overtime(Hours)"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_absences",
+   "fieldtype": "Float",
+   "label": "Total Absences(Hours)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-23 21:27:13.829361",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "Manhours Report",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

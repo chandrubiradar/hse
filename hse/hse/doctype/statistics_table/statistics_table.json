@@ -1,0 +1,41 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-04 20:40:44.796097",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "incident_classification",
+  "this_month",
+  "this_year"
+ ],
+ "fields": [
+  {
+   "fieldname": "incident_classification",
+   "fieldtype": "Data",
+   "label": "Incident Classification"
+  },
+  {
+   "fieldname": "this_month",
+   "fieldtype": "Int",
+   "label": "This Month"
+  },
+  {
+   "fieldname": "this_year",
+   "fieldtype": "Int",
+   "label": "This Year"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-09-04 20:49:49.710868",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "Statistics Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

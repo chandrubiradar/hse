@@ -1,0 +1,224 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: Incident Notification - {####}",
+ "creation": "2023-08-30 19:44:37.565194",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "employee_name",
+  "position",
+  "column_break_3",
+  "html_4",
+  "office",
+  "mobile",
+  "email",
+  "information_of_the_incident_section",
+  "activity",
+  "location",
+  "date",
+  "time",
+  "column_break_13",
+  "injured_person",
+  "damaged_asset",
+  "person_involved",
+  "name2",
+  "full_name",
+  "position1",
+  "person_in_charge_or_the_supervisor_on_the_time_of_incident",
+  "name3",
+  "full_name1",
+  "position2",
+  "section_break_22",
+  "description_of_incident",
+  "reported_by",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Link",
+   "label": "Name",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "name1.designation",
+   "fieldname": "position",
+   "fieldtype": "Link",
+   "label": "Position",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "html_4",
+   "fieldtype": "Heading",
+   "label": "Contact Details"
+  },
+  {
+   "fieldname": "office",
+   "fieldtype": "Data",
+   "label": "Office"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "information_of_the_incident_section",
+   "fieldtype": "Section Break",
+   "label": "Information of the Incident"
+  },
+  {
+   "fieldname": "activity",
+   "fieldtype": "Data",
+   "label": "Activity"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Data",
+   "label": "Time"
+  },
+  {
+   "default": "0",
+   "fieldname": "injured_person",
+   "fieldtype": "Check",
+   "label": "Injured Person"
+  },
+  {
+   "default": "0",
+   "fieldname": "damaged_asset",
+   "fieldtype": "Check",
+   "label": "Damaged Asset"
+  },
+  {
+   "default": "0",
+   "fieldname": "person_involved",
+   "fieldtype": "Check",
+   "label": "Person Involved"
+  },
+  {
+   "fieldname": "name2",
+   "fieldtype": "Link",
+   "label": "Name",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "name2.designation",
+   "fieldname": "position1",
+   "fieldtype": "Link",
+   "label": "Position",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "person_in_charge_or_the_supervisor_on_the_time_of_incident",
+   "fieldtype": "Heading",
+   "label": "Person in Charge or the Supervisor on the time of Incident"
+  },
+  {
+   "fieldname": "name3",
+   "fieldtype": "Link",
+   "label": "Name",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "name3.designation",
+   "fieldname": "position2",
+   "fieldtype": "Link",
+   "label": "Position",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description_of_incident",
+   "fieldtype": "Text",
+   "label": "Description of Incident"
+  },
+  {
+   "fieldname": "reported_by",
+   "fieldtype": "Data",
+   "label": "Reported By"
+  },
+  {
+   "fetch_from": "name1.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "name2.employee_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "name3.employee_name",
+   "fieldname": "full_name1",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Incident Notification form",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-10-09 20:27:21.727247",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "Incident Notification form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

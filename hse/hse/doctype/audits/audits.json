@@ -1,0 +1,741 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{location}-{month}-{audit_type}",
+ "creation": "2023-08-31 21:27:19.269169",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "month",
+  "contract",
+  "column_break_3",
+  "location",
+  "audit_type",
+  "external_audit_table_section",
+  "table_8",
+  "section_break_5",
+  "lifting_check_list",
+  "supervisors_must_supervise",
+  "tbt",
+  "column_break_9",
+  "hands_free",
+  "ptw_monitoring",
+  "wah_checklist",
+  "column_break_13",
+  "cse",
+  "ppe",
+  "baseline",
+  "section_break_1",
+  "done_by",
+  "done_by_if_external",
+  "asset",
+  "attach_8",
+  "column_break_5",
+  "name_1",
+  "remarks_1",
+  "section_break_9",
+  "assessor",
+  "ptw_number",
+  "risk_level_of_permit",
+  "attach_17",
+  "column_break_14",
+  "name_2",
+  "description_of_work",
+  "section_break_18",
+  "conducted_by",
+  "conducted_by_if_external",
+  "organisation",
+  "specify_1",
+  "attach_24",
+  "column_break_25",
+  "name_3",
+  "remarks",
+  "section_break_28",
+  "conducted_by_2",
+  "conducted_by_if_external_44",
+  "permit_number",
+  "involved",
+  "attach_33",
+  "column_break_34",
+  "name_4",
+  "remarks2",
+  "section_break_38",
+  "conducted_by_3",
+  "conducted_by_if_external_53",
+  "organisation_2",
+  "specify_2",
+  "attach_43",
+  "column_break_44",
+  "name_5",
+  "remarks3",
+  "section_break_48",
+  "conducted_by_4",
+  "conducted_by_if_external_62",
+  "organisation_3",
+  "specify_3",
+  "attach_52",
+  "column_break_53",
+  "name_6",
+  "remarks_4",
+  "section_break_57",
+  "verified_by",
+  "verified_by_if_external_71",
+  "organisation_4",
+  "specify_4",
+  "total_points",
+  "attach_60",
+  "column_break_61",
+  "name_7",
+  "remarks_5",
+  "section_break_67",
+  "verified_by_2",
+  "verified_by_if_external_81",
+  "organisation_5",
+  "specify_5",
+  "attach_73",
+  "column_break_72",
+  "name_8",
+  "remarks_6",
+  "baseline_inspect_checklist_section",
+  "checked_by",
+  "audited_by_if_external",
+  "department",
+  "attach_92",
+  "column_break_92",
+  "name1",
+  "description",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "depends_on": "eval:doc.audit_type == 'Internal'",
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break",
+   "label": "Lifting and Hoisting LOD 1 check list"
+  },
+  {
+   "default": "0",
+   "fieldname": "lifting_check_list",
+   "fieldtype": "Check",
+   "label": "Lifting and Hoisting LOD 1 check list"
+  },
+  {
+   "depends_on": "eval:doc.lifting_check_list",
+   "fieldname": "asset",
+   "fieldtype": "Data",
+   "label": "Asset"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Location",
+   "options": "Location",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.lifting_check_list",
+   "fieldname": "done_by",
+   "fieldtype": "Link",
+   "label": "Done By",
+   "options": "Employee"
+  },
+  {
+   "depends_on": "eval:doc.lifting_check_list",
+   "fieldname": "attach_8",
+   "fieldtype": "Attach"
+  },
+  {
+   "depends_on": "eval:doc.audit_type == 'Internal'",
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break",
+   "label": "Permit to Work Effectiveness Monitoring"
+  },
+  {
+   "default": "0",
+   "fieldname": "ptw_monitoring",
+   "fieldtype": "Check",
+   "label": "Permit to Work Effectiveness Monitoring"
+  },
+  {
+   "depends_on": "eval:doc.ptw_monitoring",
+   "fieldname": "ptw_number",
+   "fieldtype": "Data",
+   "label": "PTW Number"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.ptw_monitoring",
+   "fieldname": "description_of_work",
+   "fieldtype": "Small Text",
+   "label": "Description of Work"
+  },
+  {
+   "depends_on": "eval:doc.ptw_monitoring",
+   "fieldname": "risk_level_of_permit",
+   "fieldtype": "Select",
+   "label": "Risk Level of Permit",
+   "options": "\nHigh\nLow"
+  },
+  {
+   "depends_on": "eval:doc.ptw_monitoring",
+   "fieldname": "attach_17",
+   "fieldtype": "Attach"
+  },
+  {
+   "depends_on": "eval:doc.audit_type == 'Internal'",
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break",
+   "label": "LOD 1- Supervisors Must Supervise"
+  },
+  {
+   "default": "0",
+   "fieldname": "supervisors_must_supervise",
+   "fieldtype": "Check",
+   "label": "LOD 1-Supervisors Must Supervise"
+  },
+  {
+   "depends_on": "eval:doc.lifting_check_list",
+   "fetch_from": "done_by.employee_name",
+   "fieldname": "name_1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.ptw_monitoring",
+   "fieldname": "assessor",
+   "fieldtype": "Link",
+   "label": "Assessor",
+   "options": "Employee"
+  },
+  {
+   "depends_on": "eval:doc.ptw_monitoring",
+   "fetch_from": "assessor.employee_name",
+   "fieldname": "name_2",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.supervisors_must_supervise",
+   "fieldname": "organisation",
+   "fieldtype": "Select",
+   "label": "Organisation",
+   "options": "\nEAST\nWEST\nDARAT\nOPM\nHP\nAEP\nIFM\nWELLS\nSMR\nSTL\nSAV\nOthers"
+  },
+  {
+   "depends_on": "eval:doc.supervisors_must_supervise",
+   "fieldname": "attach_24",
+   "fieldtype": "Attach"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.supervisors_must_supervise",
+   "fieldname": "conducted_by",
+   "fieldtype": "Link",
+   "label": "Conducted By",
+   "options": "Employee"
+  },
+  {
+   "depends_on": "eval:doc.supervisors_must_supervise",
+   "fetch_from": "conducted_by.employee_name",
+   "fieldname": "name_3",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.audit_type == 'Internal'",
+   "fieldname": "section_break_28",
+   "fieldtype": "Section Break",
+   "label": "Working at Height Health Check"
+  },
+  {
+   "default": "0",
+   "fieldname": "wah_checklist",
+   "fieldtype": "Check",
+   "label": "Working at Height Health Check"
+  },
+  {
+   "depends_on": "eval:doc.wah_checklist",
+   "fieldname": "permit_number",
+   "fieldtype": "Data",
+   "label": "Permit Number"
+  },
+  {
+   "depends_on": "eval:doc.wah_checklist",
+   "fieldname": "conducted_by_2",
+   "fieldtype": "Link",
+   "label": "Conducted By",
+   "options": "Employee"
+  },
+  {
+   "depends_on": "eval:doc.wah_checklist",
+   "fieldname": "involved",
+   "fieldtype": "Data",
+   "label": "Company Department/Contractor Involved"
+  },
+  {
+   "depends_on": "eval:doc.wah_checklist",
+   "fieldname": "attach_33",
+   "fieldtype": "Attach"
+  },
+  {
+   "fieldname": "column_break_34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.wah_checklist",
+   "fetch_from": "conducted_by_2.employee_name",
+   "fieldname": "name_4",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.supervisors_must_supervise",
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "depends_on": "eval:doc.wah_checklist",
+   "fieldname": "remarks2",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "depends_on": "eval:doc.audit_type == 'Internal'",
+   "fieldname": "section_break_38",
+   "fieldtype": "Section Break",
+   "label": "LOD 1 \u2013 Tool Box Talk"
+  },
+  {
+   "default": "0",
+   "fieldname": "tbt",
+   "fieldtype": "Check",
+   "label": "LOD 1 \u2013 Tool Box Talk"
+  },
+  {
+   "depends_on": "eval:doc.tbt",
+   "fieldname": "conducted_by_3",
+   "fieldtype": "Link",
+   "label": "Conducted By",
+   "options": "Employee"
+  },
+  {
+   "depends_on": "eval:doc.tbt",
+   "fieldname": "organisation_2",
+   "fieldtype": "Select",
+   "label": "Organisation",
+   "options": "\nEAST\nWEST\nDARAT\nOPM\nHP\nAEP\nIFM\nWELLS\nSMR\nSTL\nSAV\nOthers"
+  },
+  {
+   "depends_on": "eval:doc.tbt",
+   "fieldname": "attach_43",
+   "fieldtype": "Attach"
+  },
+  {
+   "fieldname": "column_break_44",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.tbt",
+   "fetch_from": "conducted_by_3.employee_name",
+   "fieldname": "name_5",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.tbt",
+   "fieldname": "remarks3",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "default": "0",
+   "fieldname": "cse",
+   "fieldtype": "Check",
+   "label": "Confined Space Enrty LOD 1"
+  },
+  {
+   "depends_on": "eval:doc.audit_type == 'Internal'",
+   "fieldname": "section_break_48",
+   "fieldtype": "Section Break",
+   "label": "Confined Space Enrty LOD 1"
+  },
+  {
+   "depends_on": "eval:doc.organisation=='Others' && doc.supervisors_must_supervise",
+   "fieldname": "specify_1",
+   "fieldtype": "Data",
+   "label": "Specify"
+  },
+  {
+   "depends_on": "eval:doc.organisation_2 == 'Others' && doc.tbt",
+   "fieldname": "specify_2",
+   "fieldtype": "Data",
+   "label": "Specify"
+  },
+  {
+   "depends_on": "eval:doc.cse",
+   "fieldname": "conducted_by_4",
+   "fieldtype": "Link",
+   "label": "Conducted By",
+   "options": "Employee"
+  },
+  {
+   "depends_on": "eval:doc.cse",
+   "fieldname": "organisation_3",
+   "fieldtype": "Select",
+   "label": "Organisation",
+   "options": "\nEAST\nWEST\nDARAT\nOPM\nHP\nAEP\nIFM\nWELLS\nSMR\nSTL\nSAV\nOthers"
+  },
+  {
+   "depends_on": "eval:doc.organisation_3 == 'Others' && doc.cse",
+   "fieldname": "specify_3",
+   "fieldtype": "Data",
+   "label": "Specify"
+  },
+  {
+   "depends_on": "eval:doc.cse",
+   "fieldname": "attach_52",
+   "fieldtype": "Attach"
+  },
+  {
+   "fieldname": "column_break_53",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.cse",
+   "fetch_from": "conducted_by_4.employee_name",
+   "fieldname": "name_6",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.cse",
+   "fieldname": "remarks_4",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "default": "0",
+   "fieldname": "hands_free",
+   "fieldtype": "Check",
+   "label": "Hands Free Implementation Health Check"
+  },
+  {
+   "depends_on": "eval:doc.audit_type == 'Internal'",
+   "fieldname": "section_break_57",
+   "fieldtype": "Section Break",
+   "label": "Hands Free Implementation Health Check"
+  },
+  {
+   "depends_on": "eval:doc.hands_free",
+   "fieldname": "organisation_4",
+   "fieldtype": "Select",
+   "label": "Organisation",
+   "options": "\nEAST\nWEST\nDARAT\nOPM\nHP\nAEP\nIFM\nWELLS\nSMR\nSTL\nSAV\nOthers"
+  },
+  {
+   "depends_on": "eval:doc.organisation_4 == 'Others' && doc.hands_free",
+   "fieldname": "specify_4",
+   "fieldtype": "Data",
+   "label": "Specify"
+  },
+  {
+   "depends_on": "eval:doc.hands_free",
+   "fieldname": "attach_60",
+   "fieldtype": "Attach"
+  },
+  {
+   "depends_on": "eval:doc.hands_free",
+   "fieldname": "verified_by",
+   "fieldtype": "Link",
+   "label": "Verified By",
+   "options": "Employee"
+  },
+  {
+   "depends_on": "eval:doc.hands_free",
+   "fetch_from": "verified_by.employee_name",
+   "fieldname": "name_7",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.hands_free",
+   "fieldname": "remarks_5",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "depends_on": "eval:doc.hands_free",
+   "fieldname": "total_points",
+   "fieldtype": "Data",
+   "label": "Total Points"
+  },
+  {
+   "fieldname": "column_break_61",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "ppe",
+   "fieldtype": "Check",
+   "label": "PPE Health Check"
+  },
+  {
+   "depends_on": "eval:doc.audit_type == 'Internal'",
+   "fieldname": "section_break_67",
+   "fieldtype": "Section Break",
+   "label": "PPE Health Check"
+  },
+  {
+   "depends_on": "eval:doc.ppe",
+   "fieldname": "organisation_5",
+   "fieldtype": "Select",
+   "label": "Organisation",
+   "options": "\nEAST\nWEST\nDARAT\nOPM\nHP\nAEP\nIFM\nWELLS\nSMR\nSTL\nSAV\nOthers"
+  },
+  {
+   "depends_on": "eval:doc.ppe && doc.organisation_5=='Others'",
+   "fieldname": "specify_5",
+   "fieldtype": "Data",
+   "label": "Specify"
+  },
+  {
+   "depends_on": "eval:doc.ppe",
+   "fieldname": "remarks_6",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "depends_on": "eval:doc.ppe",
+   "fieldname": "verified_by_2",
+   "fieldtype": "Link",
+   "label": "Verified By",
+   "options": "Employee"
+  },
+  {
+   "depends_on": "eval:doc.ppe",
+   "fetch_from": "verified_by_2.employee_name",
+   "fieldname": "name_8",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.ppe",
+   "fieldname": "attach_73",
+   "fieldtype": "Attach"
+  },
+  {
+   "fieldname": "column_break_72",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.lifting_check_list",
+   "fieldname": "remarks_1",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "default": "0",
+   "fieldname": "baseline",
+   "fieldtype": "Check",
+   "label": "Baseline Inspect Checklist"
+  },
+  {
+   "depends_on": "eval:doc.baseline && doc.audit_type == 'Internal'",
+   "fieldname": "baseline_inspect_checklist_section",
+   "fieldtype": "Section Break",
+   "label": "Baseline Inspect Checklist"
+  },
+  {
+   "depends_on": "eval:doc.baseline",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_92",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Link",
+   "label": "Audited By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "checked_by.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.lifting_check_list",
+   "fieldname": "done_by_if_external",
+   "fieldtype": "Data",
+   "label": "Done By (if external)"
+  },
+  {
+   "depends_on": "eval:doc.supervisors_must_supervise",
+   "fieldname": "conducted_by_if_external",
+   "fieldtype": "Data",
+   "label": "Conducted By (If external)"
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "label": "Month",
+   "options": "\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.audit_type == 'Internal'",
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.wah_checklist",
+   "fieldname": "conducted_by_if_external_44",
+   "fieldtype": "Data",
+   "label": "Conducted By (If external)"
+  },
+  {
+   "depends_on": "eval:doc.tbt",
+   "fieldname": "conducted_by_if_external_53",
+   "fieldtype": "Data",
+   "label": "Conducted By (If external)"
+  },
+  {
+   "depends_on": "eval:doc.cse",
+   "fieldname": "conducted_by_if_external_62",
+   "fieldtype": "Data",
+   "label": "Conducted By (If external)"
+  },
+  {
+   "depends_on": "eval:doc.hands_free",
+   "fieldname": "verified_by_if_external_71",
+   "fieldtype": "Data",
+   "label": "Verified By (If external)"
+  },
+  {
+   "depends_on": "eval:doc.ppe",
+   "fieldname": "verified_by_if_external_81",
+   "fieldtype": "Data",
+   "label": "Verified By (If external)"
+  },
+  {
+   "fieldname": "audited_by_if_external",
+   "fieldtype": "Data",
+   "label": "Audited By (If external)"
+  },
+  {
+   "fieldname": "attach_92",
+   "fieldtype": "Attach"
+  },
+  {
+   "fieldname": "audit_type",
+   "fieldtype": "Select",
+   "label": "Audit Type",
+   "options": "\nInternal\nExternal",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.audit_type == 'External'",
+   "fieldname": "contract",
+   "fieldtype": "Link",
+   "label": "Contract",
+   "options": "Contract"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Audits",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.audit_type == 'External'",
+   "fieldname": "external_audit_table_section",
+   "fieldtype": "Section Break",
+   "label": "External Audit Table"
+  },
+  {
+   "depends_on": "eval:doc.audit_type == 'External'",
+   "fieldname": "table_8",
+   "fieldtype": "Table",
+   "options": "External Audit Table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-08 21:03:47.037651",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "Audits",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

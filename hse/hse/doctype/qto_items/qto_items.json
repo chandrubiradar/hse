@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-26 19:18:05.696591",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_no",
+  "service_no",
+  "service_description",
+  "nos",
+  "measurement_1",
+  "measurement_2",
+  "measurement_3",
+  "measurement_4",
+  "measurement_5",
+  "measurement_6",
+  "sub_total_quantity",
+  "total_quantity",
+  "unit"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_no",
+   "fieldtype": "Link",
+   "label": "Item No",
+   "options": "Task"
+  },
+  {
+   "fieldname": "service_no",
+   "fieldtype": "Data",
+   "label": " Service No"
+  },
+  {
+   "fetch_from": "item_no.activity_name",
+   "fieldname": "service_description",
+   "fieldtype": "Data",
+   "label": "Service Description"
+  },
+  {
+   "fieldname": "nos",
+   "fieldtype": "Int",
+   "label": "Nos"
+  },
+  {
+   "fieldname": "measurement_1",
+   "fieldtype": "Float",
+   "label": "Measurement 1"
+  },
+  {
+   "fieldname": "measurement_2",
+   "fieldtype": "Float",
+   "label": "Measurement 2"
+  },
+  {
+   "fieldname": "measurement_3",
+   "fieldtype": "Float",
+   "label": "Measurement 3"
+  },
+  {
+   "fieldname": "measurement_4",
+   "fieldtype": "Float",
+   "label": "Measurement 4"
+  },
+  {
+   "fieldname": "measurement_5",
+   "fieldtype": "Float",
+   "label": "Measurement 5"
+  },
+  {
+   "fieldname": "measurement_6",
+   "fieldtype": "Float",
+   "label": "Measurement 6"
+  },
+  {
+   "fieldname": "sub_total_quantity",
+   "fieldtype": "Float",
+   "label": "Sub Total Quantity"
+  },
+  {
+   "fieldname": "total_quantity",
+   "fieldtype": "Float",
+   "label": "Total Quantity"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Link",
+   "label": "Units",
+   "options": "UOM"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-10-31 21:08:17.724437",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "QTO Items",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,29 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-06 16:08:04.620724",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "se_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "se_id",
+   "fieldtype": "Data",
+   "label": "SE ID"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-09-06 16:08:04.620724",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "SE ID Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

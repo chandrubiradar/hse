@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Learning Form Incident - {####}",
+ "creation": "2023-08-30 20:24:08.594883",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "investigation_report",
+  "fac",
+  "target_audience_for_this_alert",
+  "what_happened",
+  "column_break_4",
+  "why_it_happened",
+  "lessons_learned__recommendations",
+  "further_information"
+ ],
+ "fields": [
+  {
+   "fieldname": "fac",
+   "fieldtype": "Data",
+   "label": "FAC"
+  },
+  {
+   "fieldname": "target_audience_for_this_alert",
+   "fieldtype": "Text",
+   "label": "Target Audience for This Alert"
+  },
+  {
+   "fieldname": "what_happened",
+   "fieldtype": "Text",
+   "label": "What Happened"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "why_it_happened",
+   "fieldtype": "Text",
+   "label": "Why it happened"
+  },
+  {
+   "fieldname": "lessons_learned__recommendations",
+   "fieldtype": "Text",
+   "label": "Lessons learned & Recommendations"
+  },
+  {
+   "fieldname": "further_information",
+   "fieldtype": "Small Text",
+   "label": "Further Information"
+  },
+  {
+   "fieldname": "investigation_report",
+   "fieldtype": "Link",
+   "label": "Investigation Report",
+   "options": "Incident Investigation Report"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-09 20:37:40.525904",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "Learning Form Incident",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

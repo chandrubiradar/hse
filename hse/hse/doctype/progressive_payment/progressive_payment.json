@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{tracing_sheet_no}-Progressive Payment - {####}",
+ "creation": "2023-11-03 14:57:34.164463",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "progressive_payment",
+  "tracing_sheet_no",
+  "item_no",
+  "progressive_quantity",
+  "progressive_total"
+ ],
+ "fields": [
+  {
+   "fieldname": "tracing_sheet_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Tracing Sheet No",
+   "options": "ACTUAL COST MEASURE"
+  },
+  {
+   "fieldname": "item_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item No",
+   "options": "Task"
+  },
+  {
+   "fieldname": "progressive_payment",
+   "fieldtype": "Data",
+   "label": "Progressive Payment Name"
+  },
+  {
+   "fieldname": "progressive_quantity",
+   "fieldtype": "Data",
+   "label": "Progressive Quantity"
+  },
+  {
+   "fieldname": "progressive_total",
+   "fieldtype": "Data",
+   "label": "Progressive Total"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-03 18:32:14.925130",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "Progressive Payment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

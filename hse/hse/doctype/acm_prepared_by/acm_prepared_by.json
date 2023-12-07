@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-28 22:45:41.604906",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "signature",
+  "img",
+  "name1",
+  "employee_name",
+  "ref_id",
+  "date"
+ ],
+ "fields": [
+  {
+   "fieldname": "signature",
+   "fieldtype": "Image",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Link",
+   "label": "Name",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "name1.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fetch_from": "name1.sign",
+   "fieldname": "img",
+   "fieldtype": "Attach",
+   "label": "Img",
+   "options": "img"
+  },
+  {
+   "fieldname": "ref_id",
+   "fieldtype": "Data",
+   "label": "Ref ID"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-10-30 12:57:24.639631",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "ACM Prepared by",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

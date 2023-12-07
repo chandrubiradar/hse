@@ -1,0 +1,165 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:Health Risk Assessment - {####}",
+ "creation": "2023-08-29 17:51:48.356422",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "hra",
+  "select_the_type",
+  "location",
+  "column_break_3",
+  "activity_task",
+  "section_break_5",
+  "physical",
+  "chemical",
+  "omic",
+  "biological",
+  "section_break_6",
+  "ram",
+  "section_break_8",
+  "data_9",
+  "chemical_",
+  "ergonomic_",
+  "biological_",
+  "psychological_"
+ ],
+ "fields": [
+  {
+   "fieldname": "select_the_type",
+   "fieldtype": "Select",
+   "label": "Select the Type",
+   "options": "\nHealth Hazard Inventory\nRAM\nSupervisors, Engineers & HSEO\nLifting Crew\nScaffolders\nMechanical Crew\nPainting"
+  },
+  {
+   "depends_on": "eval:doc.select_the_type == 'Health Hazard Inventory'",
+   "fieldname": "physical",
+   "fieldtype": "Table",
+   "label": "Physical",
+   "options": "HRA Pysical Table"
+  },
+  {
+   "depends_on": "eval:doc.select_the_type == 'Health Hazard Inventory'",
+   "fieldname": "chemical",
+   "fieldtype": "Table",
+   "label": "Chemical",
+   "options": "HRA Chemical Table"
+  },
+  {
+   "depends_on": "eval:doc.select_the_type == 'Health Hazard Inventory'",
+   "fieldname": "omic",
+   "fieldtype": "Table",
+   "label": "OMIC",
+   "options": "HRA OMIC Table"
+  },
+  {
+   "depends_on": "eval:doc.select_the_type == 'Health Hazard Inventory'",
+   "fieldname": "biological",
+   "fieldtype": "Table",
+   "label": "BIOLOGICAL",
+   "options": "HRA BIOLOGICAL Table"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.select_the_type == 'RAM'",
+   "fieldname": "ram",
+   "fieldtype": "Table",
+   "label": "RAM",
+   "options": "HRA RAM Table"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.select_the_type == 'Supervisors, Engineers & HSEO' ||doc.select_the_type == 'Lifting Crew' || doc.select_the_type == 'Scaffolders' || doc.select_the_type == 'Mechanical Crew' || doc.select_the_type == 'Painting'",
+   "fieldname": "data_9",
+   "fieldtype": "Table",
+   "label": "Physical",
+   "options": "HRA Supervisors Engineers  HSEO Physical Table"
+  },
+  {
+   "depends_on": "eval:doc.select_the_type == 'Supervisors, Engineers & HSEO' ||doc.select_the_type == 'Lifting Crew' || doc.select_the_type == 'Scaffolders' || doc.select_the_type == 'Mechanical Crew' || doc.select_the_type == 'Painting'",
+   "fieldname": "chemical_",
+   "fieldtype": "Table",
+   "label": "Chemical",
+   "options": "HRA Supervisors Engineers HSEO Chemical"
+  },
+  {
+   "depends_on": "eval:doc.select_the_type == 'Supervisors, Engineers & HSEO' ||doc.select_the_type == 'Lifting Crew' || doc.select_the_type == 'Scaffolders' || doc.select_the_type == 'Mechanical Crew' || doc.select_the_type == 'Painting'",
+   "fieldname": "ergonomic_",
+   "fieldtype": "Table",
+   "label": "Ergonomic",
+   "options": "HSE Supervisors Engineers  HSEO Ergonomic"
+  },
+  {
+   "depends_on": "eval:doc.select_the_type == 'Supervisors, Engineers & HSEO' ||doc.select_the_type == 'Lifting Crew' || doc.select_the_type == 'Scaffolders' || doc.select_the_type == 'Mechanical Crew' || doc.select_the_type == 'Painting'",
+   "fieldname": "biological_",
+   "fieldtype": "Table",
+   "label": "Biological",
+   "options": "HRA Supervisors Engineers  HSEO Biological"
+  },
+  {
+   "depends_on": "eval:doc.select_the_type == 'Supervisors, Engineers & HSEO' ||doc.select_the_type == 'Lifting Crew' || doc.select_the_type == 'Scaffolders' || doc.select_the_type == 'Mechanical Crew' || doc.select_the_type == 'Painting'",
+   "fieldname": "psychological_",
+   "fieldtype": "Table",
+   "label": "Psychological",
+   "options": "HRA Supervisors Engineers  HSEO Psychological"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "activity_task",
+   "fieldtype": "Data",
+   "label": "Activity / Task"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "hra",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "HRA",
+   "options": "HRA SCOT Dneck"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-09 14:38:45.753680",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "Health Risk Assessment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,147 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{target}-{####}",
+ "creation": "2023-08-29 13:23:42.467802",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "target_type",
+  "target",
+  "risk_assessment_by",
+  "name1",
+  "cl_br",
+  "posting_date",
+  "reviewed_by",
+  "name2",
+  "sec_br",
+  "risk",
+  "residual_risk",
+  "sec_br2",
+  "responsibility",
+  "cl_br2",
+  "revised_by",
+  "name3",
+  "revised_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "target_type",
+   "fieldtype": "Link",
+   "label": "Target Type",
+   "options": "DocType"
+  },
+  {
+   "depends_on": "eval:doc.target_type",
+   "fieldname": "target",
+   "fieldtype": "Dynamic Link",
+   "label": "Target",
+   "options": "target_type"
+  },
+  {
+   "fieldname": "risk_assessment_by",
+   "fieldtype": "Link",
+   "label": "Risk Assessment By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "risk_assessment_by.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cl_br",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "reviewed_by",
+   "fieldtype": "Link",
+   "label": "Reviewed/Acknowledged  By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "reviewed_by.employee_name",
+   "fieldname": "name2",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_br",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "risk",
+   "fieldtype": "Table",
+   "label": "Risk",
+   "options": "Risk table"
+  },
+  {
+   "fieldname": "residual_risk",
+   "fieldtype": "Table",
+   "label": "Residual Risk",
+   "options": "Residual Risk Table"
+  },
+  {
+   "fieldname": "sec_br2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "responsibility",
+   "fieldtype": "Small Text",
+   "label": "Responsibility & Target Completion"
+  },
+  {
+   "fieldname": "cl_br2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "revised_by",
+   "fieldtype": "Link",
+   "label": "Revised By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "revised_by.employee_name",
+   "fieldname": "name3",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "revised_date",
+   "fieldtype": "Date",
+   "label": "Revised Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-29 13:23:42.467802",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "Risk Assessment And  Management",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

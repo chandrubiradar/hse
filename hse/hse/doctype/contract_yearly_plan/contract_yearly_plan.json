@@ -1,0 +1,173 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{contract}-{date}-{##}",
+ "creation": "2023-09-07 19:13:13.559614",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "contract",
+  "prepared_by",
+  "column_break_2",
+  "date",
+  "name1",
+  "leadership_and_commitment_section",
+  "activities",
+  "policy_and_strategic_objectives_section",
+  "activities_1",
+  "organisation",
+  "activities_2",
+  "hazards",
+  "activities_3",
+  "planning",
+  "activities_4",
+  "implementation",
+  "activities_5",
+  "audit",
+  "activities_6",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "contract",
+   "fieldtype": "Link",
+   "label": "Contract",
+   "options": "Contract"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "leadership_and_commitment_section",
+   "fieldtype": "Section Break",
+   "label": "Leadership and Commitment"
+  },
+  {
+   "bold": 1,
+   "fieldname": "activities",
+   "fieldtype": "Table",
+   "label": "Activities",
+   "options": "Leadership Table"
+  },
+  {
+   "fieldname": "policy_and_strategic_objectives_section",
+   "fieldtype": "Section Break",
+   "label": "Policy and Strategic Objectives"
+  },
+  {
+   "fieldname": "activities_1",
+   "fieldtype": "Table",
+   "label": "Activities",
+   "options": "Policy Table"
+  },
+  {
+   "fieldname": "organisation",
+   "fieldtype": "Section Break",
+   "label": "Organization, Responsibilities, Resources, Standards and Documentations"
+  },
+  {
+   "fieldname": "activities_2",
+   "fieldtype": "Table",
+   "label": "Activities",
+   "options": "Organization Table"
+  },
+  {
+   "fieldname": "hazards",
+   "fieldtype": "Section Break",
+   "label": "Hazards and Effect Management Process"
+  },
+  {
+   "fieldname": "activities_3",
+   "fieldtype": "Table",
+   "label": "Activities",
+   "options": "Hazard Table"
+  },
+  {
+   "fieldname": "planning",
+   "fieldtype": "Section Break",
+   "label": "Planning and Procedure"
+  },
+  {
+   "fieldname": "activities_4",
+   "fieldtype": "Table",
+   "label": "Activities",
+   "options": "Planning Table"
+  },
+  {
+   "fieldname": "implementation",
+   "fieldtype": "Section Break",
+   "label": "Implementation and Performance Monitoring"
+  },
+  {
+   "fieldname": "activities_5",
+   "fieldtype": "Table",
+   "label": "Activities",
+   "options": "Implementation Table"
+  },
+  {
+   "fieldname": "audit",
+   "fieldtype": "Section Break",
+   "label": "Audit and Review"
+  },
+  {
+   "fieldname": "activities_6",
+   "fieldtype": "Table",
+   "label": "Activities",
+   "options": "Audit Table"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Link",
+   "label": "Prepared By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "prepared_by.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Contract Yearly Plan",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-09 15:03:53.540764",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "Contract Yearly Plan",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

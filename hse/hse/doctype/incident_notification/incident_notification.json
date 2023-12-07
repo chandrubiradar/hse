@@ -1,0 +1,165 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-28 21:40:23.396406",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "reported_by",
+  "name1",
+  "office",
+  "cl_br",
+  "position",
+  "mob_no",
+  "email",
+  "sec_br",
+  "activity",
+  "cl_br1",
+  "location",
+  "date1",
+  "time1",
+  "sec_br2",
+  "ipda",
+  "person_involved",
+  "supervisor",
+  "sec_br3",
+  "desc",
+  "cl_br3",
+  "action_taken"
+ ],
+ "fields": [
+  {
+   "fieldname": "reported_by",
+   "fieldtype": "Link",
+   "label": "Reported By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "reported_by.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "reported_by.designation",
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "label": "Position"
+  },
+  {
+   "fetch_from": "reported_by.cell_number",
+   "fieldname": "mob_no",
+   "fieldtype": "Data",
+   "label": "Mobile No."
+  },
+  {
+   "fetch_from": "reported_by.prefered_email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "cl_br",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sec_br",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "activity",
+   "fieldtype": "Small Text",
+   "label": "Activity"
+  },
+  {
+   "fieldname": "cl_br1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "date1",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "time1",
+   "fieldtype": "Time",
+   "label": "Time"
+  },
+  {
+   "fieldname": "sec_br2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ipda",
+   "fieldtype": "Table",
+   "label": "Injured Person/Damaged Asset",
+   "options": "Target Table"
+  },
+  {
+   "fieldname": "supervisor",
+   "fieldtype": "Table",
+   "label": "Person Incharge/Supervisor",
+   "options": "Supervisor Table"
+  },
+  {
+   "fieldname": "sec_br3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "desc",
+   "fieldtype": "Small Text",
+   "label": "Description Of Incident"
+  },
+  {
+   "fieldname": "cl_br3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "action_taken",
+   "fieldtype": "Small Text",
+   "label": "Immediate Action Taken"
+  },
+  {
+   "fieldname": "person_involved",
+   "fieldtype": "Table",
+   "label": "Person Involved",
+   "options": "Person Involved"
+  },
+  {
+   "fieldname": "office",
+   "fieldtype": "Data",
+   "label": "Office"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-31 15:02:43.513629",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "Incident Notification",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

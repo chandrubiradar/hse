@@ -1,0 +1,202 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-25 15:58:01.370255",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "target_column",
+  "jan",
+  "feb",
+  "mar",
+  "apr",
+  "may",
+  "jun",
+  "jul",
+  "aug",
+  "sep",
+  "oct",
+  "nov",
+  "dec",
+  "column_break_13",
+  "jan_actual",
+  "feb_actual",
+  "mar_actual",
+  "apr_actual",
+  "may_actual",
+  "jun_actual",
+  "jul_actual",
+  "aug_actual",
+  "sep_actual",
+  "oct_actual",
+  "nov_actual",
+  "dec_actual"
+ ],
+ "fields": [
+  {
+   "fieldname": "target_column",
+   "fieldtype": "Column Break",
+   "label": "<u><b>Target</b></u>"
+  },
+  {
+   "default": "0",
+   "fieldname": "jan",
+   "fieldtype": "Float",
+   "label": "Jan Target"
+  },
+  {
+   "default": "0",
+   "fieldname": "feb",
+   "fieldtype": "Float",
+   "label": "Feb Target"
+  },
+  {
+   "default": "0",
+   "fieldname": "mar",
+   "fieldtype": "Float",
+   "label": "Mar Target"
+  },
+  {
+   "default": "0",
+   "fieldname": "apr",
+   "fieldtype": "Float",
+   "label": "Apr Target"
+  },
+  {
+   "default": "0",
+   "fieldname": "may",
+   "fieldtype": "Float",
+   "label": "May Target"
+  },
+  {
+   "default": "0",
+   "fieldname": "jun",
+   "fieldtype": "Float",
+   "label": "Jun Target"
+  },
+  {
+   "default": "0",
+   "fieldname": "jul",
+   "fieldtype": "Float",
+   "label": "Jul Target"
+  },
+  {
+   "default": "0",
+   "fieldname": "aug",
+   "fieldtype": "Float",
+   "label": "Aug Target"
+  },
+  {
+   "default": "0",
+   "fieldname": "sep",
+   "fieldtype": "Float",
+   "label": "Sep Target"
+  },
+  {
+   "default": "0",
+   "fieldname": "oct",
+   "fieldtype": "Float",
+   "label": "Oct Target"
+  },
+  {
+   "default": "0",
+   "fieldname": "nov",
+   "fieldtype": "Float",
+   "label": "Nov Target"
+  },
+  {
+   "default": "0",
+   "fieldname": "dec",
+   "fieldtype": "Float",
+   "label": "Dec Target"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break",
+   "label": "<b><u>Actual</u></b>"
+  },
+  {
+   "default": "0",
+   "fieldname": "jan_actual",
+   "fieldtype": "Float",
+   "label": " Jan Actual"
+  },
+  {
+   "default": "0",
+   "fieldname": "feb_actual",
+   "fieldtype": "Float",
+   "label": "Feb Actual"
+  },
+  {
+   "default": "0",
+   "fieldname": "mar_actual",
+   "fieldtype": "Float",
+   "label": "Mar Actual"
+  },
+  {
+   "default": "0",
+   "fieldname": "apr_actual",
+   "fieldtype": "Float",
+   "label": "Apr Actual"
+  },
+  {
+   "default": "0",
+   "fieldname": "may_actual",
+   "fieldtype": "Float",
+   "label": "May Actual"
+  },
+  {
+   "default": "0",
+   "fieldname": "jun_actual",
+   "fieldtype": "Float",
+   "label": "Jun Actual"
+  },
+  {
+   "default": "0",
+   "fieldname": "jul_actual",
+   "fieldtype": "Float",
+   "label": "Jul Actual"
+  },
+  {
+   "default": "0",
+   "fieldname": "aug_actual",
+   "fieldtype": "Float",
+   "label": "Aug Actual"
+  },
+  {
+   "default": "0",
+   "fieldname": "sep_actual",
+   "fieldtype": "Float",
+   "label": "Sep Actual"
+  },
+  {
+   "default": "0",
+   "fieldname": "oct_actual",
+   "fieldtype": "Float",
+   "label": "Oct Actual"
+  },
+  {
+   "default": "0",
+   "fieldname": "nov_actual",
+   "fieldtype": "Float",
+   "label": "Nov Actual"
+  },
+  {
+   "default": "0",
+   "fieldname": "dec_actual",
+   "fieldtype": "Float",
+   "label": "Dec Actual"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-10-27 22:49:30.057113",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "Contract Pax Per Month Frequency Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

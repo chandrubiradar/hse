@@ -1,0 +1,616 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{permit_no}",
+ "creation": "2023-09-04 20:00:50.590540",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "permit_no",
+  "cl_br",
+  "work_location",
+  "html1",
+  "yes1",
+  "no1",
+  "sec_br",
+  "html2",
+  "from_date",
+  "to_date",
+  "description",
+  "sec_br2",
+  "name_of_personnel",
+  "sec_br3",
+  "html3",
+  "img1",
+  "attach1",
+  "sec_br4",
+  "html4",
+  "check1",
+  "check2",
+  "check3",
+  "column_break_24",
+  "check4",
+  "check5",
+  "check6",
+  "sec_br5",
+  "html5",
+  "rescue_team",
+  "first_aiders",
+  "html6",
+  "sec_br6",
+  "html7",
+  "yes2",
+  "no2",
+  "html8",
+  "yes3",
+  "no3",
+  "html9",
+  "yes4",
+  "no4",
+  "html10",
+  "yes5",
+  "no5",
+  "html11",
+  "yes6",
+  "no6",
+  "sec_br7",
+  "html12",
+  "check7",
+  "check8",
+  "check9",
+  "check10",
+  "check11",
+  "check12",
+  "check13",
+  "check14",
+  "check15",
+  "cl_br5",
+  "check16",
+  "check17",
+  "check18",
+  "check19",
+  "check20",
+  "others",
+  "sec_br8",
+  "check_by",
+  "name3",
+  "date2",
+  "text1",
+  "text2",
+  "text3",
+  "text4",
+  "text5",
+  "text6",
+  "sec_br9",
+  "id",
+  "name4",
+  "cl_br12",
+  "sign",
+  "date5",
+  "sec_br10",
+  "id1",
+  "name5",
+  "cl_br13",
+  "sign1",
+  "date6",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company Name",
+   "options": "Company"
+  },
+  {
+   "fieldname": "permit_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Permit No .",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cl_br",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "work_location",
+   "fieldtype": "Link",
+   "label": "Work Location/Area",
+   "options": "Location"
+  },
+  {
+   "fieldname": "html1",
+   "fieldtype": "HTML",
+   "options": "Method statement(MOS) available ?"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes1",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no1",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "fieldname": "sec_br",
+   "fieldtype": "Section Break",
+   "label": "Job Task"
+  },
+  {
+   "fieldname": "html2",
+   "fieldtype": "HTML",
+   "options": "Working at height : "
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Task Description"
+  },
+  {
+   "fieldname": "sec_br2",
+   "fieldtype": "Section Break",
+   "label": "Work Crew"
+  },
+  {
+   "fieldname": "name_of_personnel",
+   "fieldtype": "Table",
+   "label": "Name of the personnel who are involved in the work at height",
+   "options": "Work Crew"
+  },
+  {
+   "fieldname": "sec_br3",
+   "fieldtype": "Section Break",
+   "label": "Rescue Method"
+  },
+  {
+   "fieldname": "html3",
+   "fieldtype": "HTML",
+   "options": "Select the most relevant rescue method from your campany's rescue plan procedure.Sketch the selected rescue method applicable to actual worksite."
+  },
+  {
+   "fieldname": "img1",
+   "fieldtype": "Image",
+   "options": "attach1"
+  },
+  {
+   "fieldname": "attach1",
+   "fieldtype": "Attach"
+  },
+  {
+   "fieldname": "sec_br4",
+   "fieldtype": "Section Break",
+   "label": "Communication"
+  },
+  {
+   "fieldname": "html4",
+   "fieldtype": "HTML",
+   "options": "What communication system will be used between the Suspended worker and Supervisor/Rescue team ?"
+  },
+  {
+   "default": "0",
+   "fieldname": "check1",
+   "fieldtype": "Check",
+   "label": "Direct voice communication"
+  },
+  {
+   "default": "0",
+   "fieldname": "check2",
+   "fieldtype": "Check",
+   "label": "Two-way Radios /Headsets"
+  },
+  {
+   "default": "0",
+   "fieldname": "check3",
+   "fieldtype": "Check",
+   "label": "Mobile Phone"
+  },
+  {
+   "default": "0",
+   "fieldname": "check4",
+   "fieldtype": "Check",
+   "label": "Whistle"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "check5",
+   "fieldtype": "Check",
+   "label": "Plant Emergency Alarm"
+  },
+  {
+   "default": "0",
+   "fieldname": "check6",
+   "fieldtype": "Check",
+   "label": "Other visuals/Audible Communication"
+  },
+  {
+   "fieldname": "sec_br5",
+   "fieldtype": "Section Break",
+   "label": "Emergency Contact"
+  },
+  {
+   "fieldname": "html5",
+   "fieldtype": "HTML",
+   "options": "In the event of an emergency / fall from height the WAH supervisor should immediately alert the rescue team and first aid assistance."
+  },
+  {
+   "fieldname": "rescue_team",
+   "fieldtype": "Table",
+   "label": "Rescue Team",
+   "options": "Rescue Team"
+  },
+  {
+   "fieldname": "first_aiders",
+   "fieldtype": "Table",
+   "label": "First Aider(s)",
+   "options": "First Aiders"
+  },
+  {
+   "fieldname": "html6",
+   "fieldtype": "HTML",
+   "options": "If the site rescue team is unable to perform a rescue contact BSP Control room,If control room is not available contact  BSP Command center at 3372999."
+  },
+  {
+   "fieldname": "sec_br6",
+   "fieldtype": "Section Break",
+   "label": "Rescue Consideration"
+  },
+  {
+   "fieldname": "html7",
+   "fieldtype": "HTML",
+   "options": "Are Rescuers trained/competent & in date in the use of rescue equipment ?"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes2",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no2",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "fieldname": "html8",
+   "fieldtype": "HTML",
+   "options": "Are there sufficient rescuers available ?"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes3",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no3",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "fieldname": "html9",
+   "fieldtype": "HTML",
+   "options": "Is rescue equipment selected appropriate  for nature of work ?"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes4",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no4",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "fieldname": "html10",
+   "fieldtype": "HTML",
+   "options": "Is rescue equipment in good condition,certified and inspected as required ?"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes5",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no5",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "fieldname": "html11",
+   "fieldtype": "HTML",
+   "options": "Have assessments including in date  been made of anchor points for the rescue ?"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes6",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no6",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "fieldname": "sec_br7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html12",
+   "fieldtype": "HTML",
+   "options": "What equipment is needed to perform a rescue for this job task ?"
+  },
+  {
+   "default": "0",
+   "fieldname": "check7",
+   "fieldtype": "Check",
+   "label": "Self rescue kits/decent devices"
+  },
+  {
+   "default": "0",
+   "fieldname": "check8",
+   "fieldtype": "Check",
+   "label": "Remote Rescue Kit"
+  },
+  {
+   "default": "0",
+   "fieldname": "check9",
+   "fieldtype": "Check",
+   "label": "Supensions trauma straps"
+  },
+  {
+   "default": "0",
+   "fieldname": "check10",
+   "fieldtype": "Check",
+   "label": "Safety ropes(Rescue ropes))"
+  },
+  {
+   "default": "0",
+   "fieldname": "check11",
+   "fieldtype": "Check",
+   "label": "Winch/GIN wheel,Descent Reel"
+  },
+  {
+   "default": "0",
+   "fieldname": "check12",
+   "fieldtype": "Check",
+   "label": "First aid-kit or trauma kit"
+  },
+  {
+   "default": "0",
+   "fieldname": "check13",
+   "fieldtype": "Check",
+   "label": "Rescue ladder or standard dropper"
+  },
+  {
+   "default": "0",
+   "fieldname": "check14",
+   "fieldtype": "Check",
+   "label": "Areal ladder truck"
+  },
+  {
+   "default": "0",
+   "fieldname": "check15",
+   "fieldtype": "Check",
+   "label": "Suspended access equipment"
+  },
+  {
+   "fieldname": "cl_br5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "check16",
+   "fieldtype": "Check",
+   "label": "Climbing/abseiling rescue kit"
+  },
+  {
+   "default": "0",
+   "fieldname": "check17",
+   "fieldtype": "Check",
+   "label": "Crane personnel basket"
+  },
+  {
+   "default": "0",
+   "fieldname": "check18",
+   "fieldtype": "Check",
+   "label": "Immobilization device(strecher,Sked,etc)"
+  },
+  {
+   "default": "0",
+   "fieldname": "check19",
+   "fieldtype": "Check",
+   "label": "AED(automatic external defibrilator)"
+  },
+  {
+   "default": "0",
+   "fieldname": "check20",
+   "fieldtype": "Check",
+   "label": "Resuscitator"
+  },
+  {
+   "fieldname": "others",
+   "fieldtype": "Small Text",
+   "label": "Others"
+  },
+  {
+   "fieldname": "sec_br8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "check_by",
+   "fieldtype": "Link",
+   "label": "Rescue equipment checked by",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "check_by.employee_name",
+   "fieldname": "name3",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date2",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "text1",
+   "fieldtype": "Small Text",
+   "label": "What obstruction are in the way of reaching the suspended person ? What additional controls or mitigations are to be employed ?(Details) :"
+  },
+  {
+   "fieldname": "text2",
+   "fieldtype": "Small Text",
+   "label": "How will rescuers get to the person ?(Details) :"
+  },
+  {
+   "fieldname": "text3",
+   "fieldtype": "Small Text",
+   "label": "How will rescuers perform the rescue using the above listed equipments?(Details) :"
+  },
+  {
+   "fieldname": "text4",
+   "fieldtype": "Small Text",
+   "label": "What method will be used for attaching and if necessary immobilizing injured person ?(Details)"
+  },
+  {
+   "fieldname": "text5",
+   "fieldtype": "Small Text",
+   "label": "Working envirement - lighting,weather,etc.(Details) :"
+  },
+  {
+   "fieldname": "text6",
+   "fieldtype": "Small Text",
+   "label": "Language barrier(Details) :"
+  },
+  {
+   "fieldname": "sec_br9",
+   "fieldtype": "Section Break",
+   "label": "Agreed By Rescuer"
+  },
+  {
+   "fieldname": "id",
+   "fieldtype": "Link",
+   "label": "Id",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "id.employee_name",
+   "fieldname": "name4",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cl_br12",
+   "fieldtype": "Column Break",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sign",
+   "fieldtype": "Attach",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "date5",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "sec_br10",
+   "fieldtype": "Section Break",
+   "label": "Approval of rescue plan by permit holder"
+  },
+  {
+   "fieldname": "id1",
+   "fieldtype": "Link",
+   "label": "Id",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "id1.employee_name",
+   "fieldname": "name5",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sign1",
+   "fieldtype": "Attach",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "date6",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "cl_br13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Height Rescue Plan",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-09 23:55:48.434533",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "Height Rescue Plan",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

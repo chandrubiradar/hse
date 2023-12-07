@@ -1,0 +1,408 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "T.A.G.U.R.#####",
+ "creation": "2023-08-31 17:36:09.285617",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "raised_by",
+  "name1",
+  "reference_indicator",
+  "event_date",
+  "event_time",
+  "cl_br",
+  "involvement_type",
+  "contractor_company",
+  "html13",
+  "onshore",
+  "offshore",
+  "location",
+  "html14",
+  "safe",
+  "unsafe",
+  "html_12",
+  "yes",
+  "no",
+  "sec_br",
+  "categories",
+  "cate_of_intervation",
+  "findings_discussion",
+  "findings",
+  "potential_hazards",
+  "agreed_remedial",
+  "html20",
+  "yes1",
+  "no1",
+  "html21",
+  "yes2",
+  "no2",
+  "follow_up_description",
+  "action_taken",
+  "sec_br5",
+  "html40",
+  "stuck",
+  "html41",
+  "caught",
+  "html42",
+  "electricity",
+  "html43",
+  "minor_cut",
+  "html44",
+  "illness",
+  "why",
+  "cl_br10",
+  "html45",
+  "process_safety1",
+  "html46",
+  "road_transport",
+  "html_55",
+  "slip_trips",
+  "product_quality_or_loss_or_stewardship",
+  "why_details",
+  "sec_br7",
+  "img1",
+  "attach1"
+ ],
+ "fields": [
+  {
+   "fieldname": "raised_by",
+   "fieldtype": "Link",
+   "label": "Raised By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "raised_by.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reference_indicator",
+   "fieldtype": "Data",
+   "label": "Reference Indicator"
+  },
+  {
+   "fieldname": "event_date",
+   "fieldtype": "Date",
+   "label": "Event Accurance Date"
+  },
+  {
+   "fieldname": "event_time",
+   "fieldtype": "Time",
+   "label": "Event Accurance Time"
+  },
+  {
+   "fieldname": "involvement_type",
+   "fieldtype": "Select",
+   "label": "Involvement Type(Please Select)",
+   "options": "Staff(BSP/BSM)\nContractors(s)\nThird Party"
+  },
+  {
+   "depends_on": "eval:doc.involvement_type==\"Contractors(s)\"",
+   "fieldname": "contractor_company",
+   "fieldtype": "Data",
+   "label": "Contractor Company who raised TAGUR"
+  },
+  {
+   "depends_on": "eval:doc.onshore||doc.offshore",
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Please state your location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "html_12",
+   "fieldtype": "HTML",
+   "options": "Work Related :"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "fieldname": "cl_br",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "html13",
+   "fieldtype": "HTML",
+   "options": "Select the Onshore Or Offshore Location  for which TAGUR is being raised :"
+  },
+  {
+   "default": "0",
+   "fieldname": "onshore",
+   "fieldtype": "Check",
+   "label": "Onshore"
+  },
+  {
+   "default": "0",
+   "fieldname": "offshore",
+   "fieldtype": "Check",
+   "label": "Offshore"
+  },
+  {
+   "fieldname": "html14",
+   "fieldtype": "HTML",
+   "options": "Observation Type :"
+  },
+  {
+   "default": "0",
+   "fieldname": "safe",
+   "fieldtype": "Check",
+   "label": "Safe Act Or Condition"
+  },
+  {
+   "default": "0",
+   "fieldname": "unsafe",
+   "fieldtype": "Check",
+   "label": "Unsafe Act Or Condition"
+  },
+  {
+   "fieldname": "sec_br",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "categories",
+   "fieldtype": "Section Break",
+   "label": "Categories of Intervention"
+  },
+  {
+   "default": "0",
+   "fieldname": "findings_discussion",
+   "fieldtype": "Section Break",
+   "label": "Findings, Discussion & Agreed Actions"
+  },
+  {
+   "default": "0",
+   "fieldname": "potential_hazards",
+   "fieldtype": "Small Text",
+   "label": "What is/are the potential  Hazard(s) / Risk(s)?"
+  },
+  {
+   "default": "0",
+   "fieldname": "agreed_remedial",
+   "fieldtype": "Small Text",
+   "label": "Was there an agreed  remedial/corrective or preventive  action? If so describe this."
+  },
+  {
+   "default": "0",
+   "fieldname": "findings",
+   "fieldtype": "Small Text",
+   "label": "What is/are the Findings ?"
+  },
+  {
+   "fieldname": "html20",
+   "fieldtype": "HTML",
+   "options": "Did a conversation take place?"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes1",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no1",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "fieldname": "html21",
+   "fieldtype": "HTML",
+   "options": "Follow up required ?"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes2",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no2",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "depends_on": "eval:doc.yes2",
+   "fieldname": "follow_up_description",
+   "fieldtype": "Small Text",
+   "label": "Follow up Description"
+  },
+  {
+   "depends_on": "eval:doc.yes2",
+   "fieldname": "action_taken",
+   "fieldtype": "Small Text",
+   "label": "Action Taken"
+  },
+  {
+   "fieldname": "sec_br5",
+   "fieldtype": "Section Break",
+   "label": "What was the primary risk area for this event ?"
+  },
+  {
+   "fieldname": "html40",
+   "fieldtype": "HTML",
+   "options": "Air transport :"
+  },
+  {
+   "default": "0",
+   "fieldname": "stuck",
+   "fieldtype": "Check",
+   "label": "Stuck by  moving objects  or machinery"
+  },
+  {
+   "fieldname": "html41",
+   "fieldtype": "HTML",
+   "options": "Dropped or fallen object :"
+  },
+  {
+   "default": "0",
+   "fieldname": "caught",
+   "fieldtype": "Check",
+   "label": "Caught in, under or between"
+  },
+  {
+   "fieldname": "html42",
+   "fieldtype": "HTML",
+   "options": "Exposer to workplace health hazards :"
+  },
+  {
+   "default": "0",
+   "fieldname": "electricity",
+   "fieldtype": "Check",
+   "label": "Exposer to electricity"
+  },
+  {
+   "fieldname": "html43",
+   "fieldtype": "HTML",
+   "options": "Maritime and water related :"
+  },
+  {
+   "default": "0",
+   "fieldname": "minor_cut",
+   "fieldtype": "Check",
+   "label": "Minor cuts, abrasions, burns or punctures"
+  },
+  {
+   "fieldname": "html44",
+   "fieldtype": "HTML",
+   "options": "Non-process safety related risks,spills,fires or explosion :"
+  },
+  {
+   "default": "0",
+   "fieldname": "illness",
+   "fieldtype": "Check",
+   "label": "Non-work related illness, injury,death or explosions"
+  },
+  {
+   "fieldname": "html45",
+   "fieldtype": "HTML",
+   "options": "Over exersion or strain :"
+  },
+  {
+   "default": "0",
+   "fieldname": "process_safety1",
+   "fieldtype": "Check",
+   "label": "Process Safety"
+  },
+  {
+   "fieldname": "html46",
+   "fieldtype": "HTML",
+   "options": "Rail Transport :"
+  },
+  {
+   "default": "0",
+   "fieldname": "road_transport",
+   "fieldtype": "Check",
+   "label": "Road Transport"
+  },
+  {
+   "fieldname": "html_55",
+   "fieldtype": "HTML",
+   "options": "Security related :"
+  },
+  {
+   "default": "0",
+   "fieldname": "slip_trips",
+   "fieldtype": "Check",
+   "label": "Slips and trips"
+  },
+  {
+   "default": "0",
+   "fieldname": "product_quality_or_loss_or_stewardship",
+   "fieldtype": "Check",
+   "label": "Product quality or loss or stewardship"
+  },
+  {
+   "fieldname": "cl_br10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "why",
+   "fieldtype": "Data",
+   "label": "Why"
+  },
+  {
+   "fieldname": "why_details",
+   "fieldtype": "Small Text",
+   "label": "Why Details"
+  },
+  {
+   "fieldname": "cate_of_intervation",
+   "fieldtype": "Table",
+   "label": "Categories Of Intervation",
+   "options": "Intervation Table"
+  },
+  {
+   "fieldname": "sec_br7",
+   "fieldtype": "Section Break",
+   "label": "Refer the following details for Categories of Intervation ,Why and Why Details"
+  },
+  {
+   "fieldname": "img1",
+   "fieldtype": "Image",
+   "options": "attach1"
+  },
+  {
+   "fieldname": "attach1",
+   "fieldtype": "Attach",
+   "hidden": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-01 18:02:41.260242",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "TAGUR Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

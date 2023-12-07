@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: Site Visit - {####}",
+ "creation": "2023-08-31 18:57:50.416665",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "site_visited",
+  "date",
+  "activities",
+  "column_break_3",
+  "objective",
+  "visiting_team_section",
+  "contractor_details",
+  "column_break_8",
+  "company_details",
+  "section_break_10",
+  "discusssion",
+  "section_break_12",
+  "rooms_for_improvement",
+  "section_break_14",
+  "attach_image",
+  "images",
+  "attendance_section",
+  "table_18"
+ ],
+ "fields": [
+  {
+   "fieldname": "site_visited",
+   "fieldtype": "Link",
+   "label": "Site Visited",
+   "options": "Mashhor Area"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Datetime",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "activities",
+   "fieldtype": "Small Text",
+   "label": "Activities"
+  },
+  {
+   "fieldname": "objective",
+   "fieldtype": "Small Text",
+   "label": "Objective"
+  },
+  {
+   "fieldname": "visiting_team_section",
+   "fieldtype": "Section Break",
+   "label": "Visiting Team"
+  },
+  {
+   "fieldname": "contractor_details",
+   "fieldtype": "Table",
+   "label": "Contractor details",
+   "options": "Site Visit Report Table"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company_details",
+   "fieldtype": "Table",
+   "label": "Company Details",
+   "options": "Site Visit Table Company"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "discusssion",
+   "fieldtype": "Text",
+   "label": "Discusssion"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rooms_for_improvement",
+   "fieldtype": "Text",
+   "label": "Rooms for Improvement"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "attach_image",
+   "fieldtype": "Attach",
+   "label": "Attach Image"
+  },
+  {
+   "fieldname": "attendance_section",
+   "fieldtype": "Section Break",
+   "label": "Attendance"
+  },
+  {
+   "fieldname": "table_18",
+   "fieldtype": "Table",
+   "options": "Attendance Table Site Visit"
+  },
+  {
+   "fieldname": "images",
+   "fieldtype": "Image",
+   "options": "attach_image"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-05 17:07:45.352751",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "Management Site Visit Report",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

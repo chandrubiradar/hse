@@ -1,0 +1,348 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{incident_id}",
+ "creation": "2023-09-01 19:12:30.250134",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "incident_notification",
+  "attach_images",
+  "small_text_2",
+  "key_incident_information_section",
+  "incident_title",
+  "incident_id",
+  "incident_actual_severity_ram",
+  "incident_location",
+  "name_of_contractor_company_involved",
+  "incident_classification",
+  "column_break_9",
+  "status",
+  "responsible_department",
+  "incident_owner__ref_ind",
+  "incident_date_and_time",
+  "potential_consequence_ram",
+  "others_incident",
+  "trc",
+  "section_break_14",
+  "is_external",
+  "is_internal",
+  "investigation_team",
+  "investigation_team_external",
+  "investigation",
+  "final_incident_investigation_report_approva",
+  "section_break_18",
+  "summary_of_incident",
+  "column_break_22",
+  "place",
+  "specific_location",
+  "date",
+  "time",
+  "section_break_25",
+  "description_of_incident",
+  "column_break_27",
+  "attach_image",
+  "image_28",
+  "section_break_30",
+  "sequence_of_events",
+  "section_break_32",
+  "incident_findings",
+  "key_learnings",
+  "column_break_34",
+  "results_of_the_investigation",
+  "data_37",
+  "immediate_actions_for_active_failures__immediate_cause",
+  "corrective_actions",
+  "additional_recommendations"
+ ],
+ "fields": [
+  {
+   "fieldname": "attach_images",
+   "fieldtype": "Table",
+   "label": "Attach Images",
+   "options": "Image Table"
+  },
+  {
+   "default": "This report is confidential. The objectives in preparing this report include seeking ways of reducing accidents in general. Particular procedures have been followed in compiling this report. No warranty is given to any person, in particular unauthorized persons having possession of this report, as to the effect of the report on the legal liability or rights of any person. The question of whether the accident was attributable in whole or in part to the fault or negligence of any person has not been determined. Any recommendation that any procedure be changed is not to be taken that to imply that any existing procedure is defective or inadequate in any way.",
+   "fieldname": "small_text_2",
+   "fieldtype": "Small Text",
+   "read_only": 1
+  },
+  {
+   "fieldname": "key_incident_information_section",
+   "fieldtype": "Section Break",
+   "label": "Key Incident Information"
+  },
+  {
+   "fieldname": "incident_title",
+   "fieldtype": "Data",
+   "label": "Incident Title"
+  },
+  {
+   "fieldname": "incident_id",
+   "fieldtype": "Data",
+   "label": "Incident ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "incident_actual_severity_ram",
+   "fieldtype": "Data",
+   "label": "Incident Actual Severity RAM"
+  },
+  {
+   "fieldname": "incident_location",
+   "fieldtype": "Link",
+   "label": "Incident Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "name_of_contractor_company_involved",
+   "fieldtype": "Data",
+   "label": "Name of Contractor company involved (and Subcontractor if  applicable)"
+  },
+  {
+   "fieldname": "responsible_department",
+   "fieldtype": "Link",
+   "label": "Responsible Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "incident_owner__ref_ind",
+   "fieldtype": "Data",
+   "label": "Incident Owner / Ref Ind."
+  },
+  {
+   "fieldname": "incident_date_and_time",
+   "fieldtype": "Datetime",
+   "label": "Incident Date and Time"
+  },
+  {
+   "fieldname": "potential_consequence_ram",
+   "fieldtype": "Data",
+   "label": "Potential Consequence RAM"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.is_internal == 1",
+   "fieldname": "investigation_team",
+   "fieldtype": "Table",
+   "ignore_user_permissions": 1,
+   "label": "Investigation Team",
+   "options": "Incident Role Table"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "8ed65d3d08",
+   "fieldname": "investigation",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Investigation",
+   "options": "Incident Approval Table Template"
+  },
+  {
+   "fieldname": "final_incident_investigation_report_approva",
+   "fieldtype": "Table",
+   "label": "Final Incident Investigation Report Approva",
+   "options": "Incident Approval Table"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "summary_of_incident",
+   "fieldtype": "Text",
+   "label": "Summary of Incident"
+  },
+  {
+   "fieldname": "place",
+   "fieldtype": "Data",
+   "label": "Place"
+  },
+  {
+   "fieldname": "specific_location",
+   "fieldtype": "Link",
+   "label": "Specific Location",
+   "options": "Mashhor Area"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Time"
+  },
+  {
+   "fieldname": "description_of_incident",
+   "fieldtype": "Small Text",
+   "label": "Description of Incident"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "attach_image",
+   "fieldtype": "Attach",
+   "label": "Attach Image"
+  },
+  {
+   "fieldname": "image_28",
+   "fieldtype": "Image",
+   "options": "attach_image"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_30",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sequence_of_events",
+   "fieldtype": "Text",
+   "label": "Sequence of Events"
+  },
+  {
+   "fieldname": "section_break_32",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "incident_findings",
+   "fieldtype": "Small Text",
+   "label": "Incident Findings"
+  },
+  {
+   "fieldname": "column_break_34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "results_of_the_investigation",
+   "fieldtype": "Text",
+   "label": "Results of the Investigation"
+  },
+  {
+   "fieldname": "key_learnings",
+   "fieldtype": "Small Text",
+   "label": "Key Learnings"
+  },
+  {
+   "fieldname": "data_37",
+   "fieldtype": "Section Break",
+   "label": "Recommendations / Action"
+  },
+  {
+   "fieldname": "immediate_actions_for_active_failures__immediate_cause",
+   "fieldtype": "Table",
+   "label": "Immediate Actions for Active Failures / Immediate Cause",
+   "options": "Recommendations Action Table"
+  },
+  {
+   "fieldname": "corrective_actions",
+   "fieldtype": "Table",
+   "label": "Corrective Actions",
+   "options": "Recommendations Action Table"
+  },
+  {
+   "fieldname": "additional_recommendations",
+   "fieldtype": "Table",
+   "label": "Additional Recommendations",
+   "options": "Recommendations Action Table"
+  },
+  {
+   "fieldname": "incident_classification",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Incident Classification",
+   "options": "\nTRC(Total recordable case)\nOthers Incident",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.incident_classification==\"TRC(Total recordable case)\"",
+   "fieldname": "trc",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "TRC(Total Recordable Case)",
+   "mandatory_depends_on": "eval:doc.incident_classification==\"TRC(Total recordable case)\"",
+   "options": "\nFATALITY\nLTI(Lost Time Injury)\nMTC(Medical Treatment case)\nRWC(Restricted Work Case)"
+  },
+  {
+   "depends_on": "eval:doc.incident_classification==\"Others Incident\"",
+   "fieldname": "others_incident",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Others Incident",
+   "mandatory_depends_on": "eval:doc.incident_classification==\"Others Incident\"",
+   "options": "\nFAC(First Aid Case)\nOccupational Health\nMVA(Motor Vehicle Accident)\nENV(Environmental)\nNM(Near Missed)/Hipo\nMedical Case NWR(Non Work Related)\nSecurity\nPolicy/Rule Violation\nLSR(Life Saving Rule)violation"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nOpen\nClosed"
+  },
+  {
+   "fieldname": "incident_notification",
+   "fieldtype": "Link",
+   "label": "Incident Notification",
+   "options": "Incident Notification form"
+  },
+  {
+   "depends_on": "eval:doc.is_external == 1",
+   "fieldname": "investigation_team_external",
+   "fieldtype": "Table",
+   "label": "Investigation Team External",
+   "options": "Incident Role External Table"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_external",
+   "fieldtype": "Check",
+   "label": "Is External"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_internal",
+   "fieldtype": "Check",
+   "label": "Is Internal"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-12 20:01:45.967594",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "Incident Investigation Report",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

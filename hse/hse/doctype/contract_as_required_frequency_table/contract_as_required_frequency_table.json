@@ -1,0 +1,202 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-25 15:54:10.529924",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "target_column",
+  "jan",
+  "feb",
+  "mar",
+  "apr",
+  "may",
+  "jun",
+  "jul",
+  "aug",
+  "sep",
+  "oct",
+  "nov",
+  "dec",
+  "column_break_13",
+  "jan_actual",
+  "feb_actual",
+  "mar_actual",
+  "apr_actual",
+  "may_actual",
+  "jun_actual",
+  "jul_actual",
+  "aug_actual",
+  "sep_actual",
+  "oct_actual",
+  "nov_actual",
+  "dec_actual"
+ ],
+ "fields": [
+  {
+   "fieldname": "target_column",
+   "fieldtype": "Column Break",
+   "label": "<u><b>Target</b></u>"
+  },
+  {
+   "default": "0",
+   "fieldname": "jan",
+   "fieldtype": "Data",
+   "label": "Jan Target"
+  },
+  {
+   "default": "0",
+   "fieldname": "feb",
+   "fieldtype": "Data",
+   "label": "Feb Target"
+  },
+  {
+   "default": "0",
+   "fieldname": "mar",
+   "fieldtype": "Data",
+   "label": "Mar Target"
+  },
+  {
+   "default": "0",
+   "fieldname": "apr",
+   "fieldtype": "Data",
+   "label": "Apr Target"
+  },
+  {
+   "default": "0",
+   "fieldname": "may",
+   "fieldtype": "Data",
+   "label": "May Target"
+  },
+  {
+   "default": "0",
+   "fieldname": "jun",
+   "fieldtype": "Data",
+   "label": "Jun Target"
+  },
+  {
+   "default": "0",
+   "fieldname": "jul",
+   "fieldtype": "Data",
+   "label": "Jul Target"
+  },
+  {
+   "default": "0",
+   "fieldname": "aug",
+   "fieldtype": "Data",
+   "label": "Aug Target"
+  },
+  {
+   "default": "0",
+   "fieldname": "sep",
+   "fieldtype": "Data",
+   "label": "Sep Target"
+  },
+  {
+   "default": "0",
+   "fieldname": "oct",
+   "fieldtype": "Data",
+   "label": "Oct Target"
+  },
+  {
+   "default": "0",
+   "fieldname": "nov",
+   "fieldtype": "Data",
+   "label": "Nov Target"
+  },
+  {
+   "default": "0",
+   "fieldname": "dec",
+   "fieldtype": "Data",
+   "label": "Dec Target"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break",
+   "label": "<u><b>Actual</b></u>"
+  },
+  {
+   "default": "0",
+   "fieldname": "jan_actual",
+   "fieldtype": "Data",
+   "label": " Jan Actual"
+  },
+  {
+   "default": "0",
+   "fieldname": "feb_actual",
+   "fieldtype": "Data",
+   "label": "Feb Actual"
+  },
+  {
+   "default": "0",
+   "fieldname": "mar_actual",
+   "fieldtype": "Data",
+   "label": "Mar Actual"
+  },
+  {
+   "default": "0",
+   "fieldname": "apr_actual",
+   "fieldtype": "Data",
+   "label": "Apr Actual"
+  },
+  {
+   "default": "0",
+   "fieldname": "may_actual",
+   "fieldtype": "Data",
+   "label": "May Actual"
+  },
+  {
+   "default": "0",
+   "fieldname": "jun_actual",
+   "fieldtype": "Data",
+   "label": "Jun Actual"
+  },
+  {
+   "default": "0",
+   "fieldname": "jul_actual",
+   "fieldtype": "Data",
+   "label": "Jul Actual"
+  },
+  {
+   "default": "0",
+   "fieldname": "aug_actual",
+   "fieldtype": "Data",
+   "label": "Aug Actual"
+  },
+  {
+   "default": "0",
+   "fieldname": "sep_actual",
+   "fieldtype": "Data",
+   "label": "Sep Actual"
+  },
+  {
+   "default": "0",
+   "fieldname": "oct_actual",
+   "fieldtype": "Data",
+   "label": "Oct Actual"
+  },
+  {
+   "default": "0",
+   "fieldname": "nov_actual",
+   "fieldtype": "Data",
+   "label": "Nov Actual"
+  },
+  {
+   "default": "0",
+   "fieldname": "dec_actual",
+   "fieldtype": "Data",
+   "label": "Dec Actual"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-10-27 22:52:12.661985",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "Contract As Required Frequency Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

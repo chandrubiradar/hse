@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-28 18:53:57.839232",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "activity",
+  "job_stages",
+  "hazard_description_or_identification",
+  "potential_risk_p",
+  "potential_risk_a",
+  "potential_risk_c",
+  "potential_risk_e",
+  "control_measures",
+  "recovery_measures",
+  "action_responsible_party"
+ ],
+ "fields": [
+  {
+   "fieldname": "activity",
+   "fieldtype": "Data",
+   "label": "Activity"
+  },
+  {
+   "fieldname": "job_stages",
+   "fieldtype": "Small Text",
+   "label": "Job Stages"
+  },
+  {
+   "fieldname": "hazard_description_or_identification",
+   "fieldtype": "Small Text",
+   "label": "Hazard Description/Identification"
+  },
+  {
+   "fieldname": "potential_risk_p",
+   "fieldtype": "Data",
+   "label": "Potential Risk (P)"
+  },
+  {
+   "fieldname": "potential_risk_a",
+   "fieldtype": "Data",
+   "label": "Potential Risk (A)"
+  },
+  {
+   "fieldname": "potential_risk_c",
+   "fieldtype": "Data",
+   "label": "Potential Risk (C)"
+  },
+  {
+   "fieldname": "potential_risk_e",
+   "fieldtype": "Data",
+   "label": "Potential Risk (E)"
+  },
+  {
+   "fieldname": "control_measures",
+   "fieldtype": "Small Text",
+   "label": "Control Measures"
+  },
+  {
+   "fieldname": "recovery_measures",
+   "fieldtype": "Small Text",
+   "label": "Recovery Measures"
+  },
+  {
+   "fieldname": "action_responsible_party",
+   "fieldtype": "Small Text",
+   "label": "Action & Responsible Party"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-28 18:56:52.183576",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "JHA Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

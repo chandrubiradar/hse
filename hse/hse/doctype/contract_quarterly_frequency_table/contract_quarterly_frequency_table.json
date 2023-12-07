@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-27 22:33:44.266945",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "target_column",
+  "quarter_1",
+  "quarter_2",
+  "quarter_3",
+  "quarter_4",
+  "actual_column",
+  "quarter_1_actual",
+  "quarter_2_actual",
+  "quarter_3_actual",
+  "quarter_4_actual"
+ ],
+ "fields": [
+  {
+   "fieldname": "target_column",
+   "fieldtype": "Column Break",
+   "label": "<u><b>Target</b></u>"
+  },
+  {
+   "default": "0",
+   "fieldname": "quarter_1",
+   "fieldtype": "Data",
+   "label": "Quarter 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "quarter_2",
+   "fieldtype": "Data",
+   "label": "Quarter 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "quarter_3",
+   "fieldtype": "Data",
+   "label": "Quarter 3"
+  },
+  {
+   "default": "0",
+   "fieldname": "quarter_4",
+   "fieldtype": "Data",
+   "label": "Quarter 4"
+  },
+  {
+   "fieldname": "actual_column",
+   "fieldtype": "Column Break",
+   "label": "<u><b>Actual</b></u>"
+  },
+  {
+   "default": "0",
+   "fieldname": "quarter_1_actual",
+   "fieldtype": "Data",
+   "label": "Quarter 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "quarter_2_actual",
+   "fieldtype": "Data",
+   "label": "Quarter 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "quarter_3_actual",
+   "fieldtype": "Data",
+   "label": "Quarter 3"
+  },
+  {
+   "default": "0",
+   "fieldname": "quarter_4_actual",
+   "fieldtype": "Data",
+   "label": "Quarter 4"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-06 17:22:41.462042",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "Contract Quarterly Frequency Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

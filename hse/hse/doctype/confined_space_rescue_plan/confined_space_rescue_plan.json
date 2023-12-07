@@ -1,0 +1,846 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "CSRP.#####",
+ "creation": "2023-08-29 17:53:04.274919",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "location",
+  "activity_date",
+  "cl_br30",
+  "scope",
+  "cse_class",
+  "html1",
+  "sec_br25",
+  "html2",
+  "tank",
+  "vessel",
+  "open_pit",
+  "manholes",
+  "ship_holds",
+  "cellars",
+  "culverts",
+  "silo",
+  "trench",
+  "others",
+  "html3",
+  "side_entry",
+  "top_entry",
+  "html4",
+  "restricted",
+  "open",
+  "size",
+  "html5",
+  "open1",
+  "congested",
+  "even_surface",
+  "uneven_surface",
+  "html6",
+  "yes",
+  "no",
+  "height",
+  "methods",
+  "html7",
+  "phone",
+  "audible_signal",
+  "radio",
+  "rope_signal",
+  "others1",
+  "please_specify1",
+  "html_42",
+  "phone1",
+  "audible_signal1",
+  "radio1",
+  "others2",
+  "please_specify2",
+  "html8",
+  "phone2",
+  "audible_signal2",
+  "radio2",
+  "others3",
+  "please_specify3",
+  "sec_br2",
+  "pre",
+  "type1",
+  "port1",
+  "type2",
+  "res_str",
+  "type3",
+  "anchor_pt",
+  "type4",
+  "carabineers",
+  "type5",
+  "pulleys",
+  "type6",
+  "shock",
+  "type7",
+  "cl_br31",
+  "strap",
+  "type8",
+  "ascenders",
+  "type9",
+  "body_harness",
+  "type10",
+  "chemical_suits",
+  "type12",
+  "ropes",
+  "any_other",
+  "type11",
+  "type13",
+  "html_83",
+  "yes2",
+  "no2",
+  "sec_br_7",
+  "first_aid",
+  "type14",
+  "compressor",
+  "type15",
+  "cl_br32",
+  "respirators",
+  "type16",
+  "gas_detector",
+  "type17",
+  "sec_br8",
+  "first_aid_kit",
+  "type18",
+  "defibrillator",
+  "type19",
+  "cl_br34",
+  "adjustable",
+  "type20",
+  "any_other1",
+  "type21",
+  "sec_br10",
+  "html12",
+  "img",
+  "img1",
+  "rescue_activity_summary",
+  "sec_br12",
+  "rescuers",
+  "sec_br13",
+  "approver",
+  "name3",
+  "cl_br20",
+  "signature",
+  "approval_date",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "activity_date",
+   "fieldtype": "Date",
+   "label": "Activity Date"
+  },
+  {
+   "fieldname": "scope",
+   "fieldtype": "Data",
+   "label": "Confined Space Activity Scope"
+  },
+  {
+   "fieldname": "html1",
+   "fieldtype": "HTML",
+   "options": "CSE Classification Assessed (as per WMP) "
+  },
+  {
+   "fieldname": "html2",
+   "fieldtype": "HTML",
+   "options": "Confined Space Type :"
+  },
+  {
+   "default": "0",
+   "fieldname": "tank",
+   "fieldtype": "Check",
+   "label": "Tank"
+  },
+  {
+   "default": "0",
+   "fieldname": "vessel",
+   "fieldtype": "Check",
+   "label": "Vessel"
+  },
+  {
+   "default": "0",
+   "fieldname": "open_pit",
+   "fieldtype": "Check",
+   "label": "Open Pit"
+  },
+  {
+   "default": "0",
+   "fieldname": "manholes",
+   "fieldtype": "Check",
+   "label": "Manholes"
+  },
+  {
+   "default": "0",
+   "fieldname": "ship_holds",
+   "fieldtype": "Check",
+   "label": "Ship Holds"
+  },
+  {
+   "default": "0",
+   "fieldname": "cellars",
+   "fieldtype": "Check",
+   "label": "Cellars"
+  },
+  {
+   "default": "0",
+   "fieldname": "culverts",
+   "fieldtype": "Check",
+   "label": "Culverts"
+  },
+  {
+   "default": "0",
+   "fieldname": "silo",
+   "fieldtype": "Check",
+   "label": "Silo"
+  },
+  {
+   "default": "0",
+   "fieldname": "trench",
+   "fieldtype": "Check",
+   "label": "Trench"
+  },
+  {
+   "default": "0",
+   "fieldname": "others",
+   "fieldtype": "Check",
+   "label": "Others"
+  },
+  {
+   "fieldname": "html3",
+   "fieldtype": "HTML",
+   "options": "Confined Space Access Type :"
+  },
+  {
+   "default": "0",
+   "fieldname": "side_entry",
+   "fieldtype": "Check",
+   "label": "Side Entry"
+  },
+  {
+   "default": "0",
+   "fieldname": "top_entry",
+   "fieldtype": "Check",
+   "label": "Top Entry"
+  },
+  {
+   "fieldname": "html4",
+   "fieldtype": "HTML",
+   "options": "Access Size :"
+  },
+  {
+   "default": "0",
+   "fieldname": "restricted",
+   "fieldtype": "Check",
+   "label": "Restricted"
+  },
+  {
+   "default": "0",
+   "fieldname": "open",
+   "fieldtype": "Check",
+   "label": "Open"
+  },
+  {
+   "depends_on": "eval:doc.restricted",
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "label": "Size"
+  },
+  {
+   "fieldname": "html5",
+   "fieldtype": "HTML",
+   "options": "Condition inside confined space :"
+  },
+  {
+   "default": "0",
+   "fieldname": "open1",
+   "fieldtype": "Check",
+   "label": "Open"
+  },
+  {
+   "default": "0",
+   "fieldname": "congested",
+   "fieldtype": "Check",
+   "label": "Congested"
+  },
+  {
+   "default": "0",
+   "fieldname": "even_surface",
+   "fieldtype": "Check",
+   "label": "Even Surface"
+  },
+  {
+   "default": "0",
+   "fieldname": "uneven_surface",
+   "fieldtype": "Check",
+   "label": "Uneven Surface"
+  },
+  {
+   "fieldname": "html6",
+   "fieldtype": "HTML",
+   "options": "Scaffold setup inside Confined Space :"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "depends_on": "eval:doc.yes",
+   "fieldname": "height",
+   "fieldtype": "Data",
+   "label": "Height"
+  },
+  {
+   "fieldname": "methods",
+   "fieldtype": "Section Break",
+   "label": "Methods Of Communication Used"
+  },
+  {
+   "fieldname": "html7",
+   "fieldtype": "HTML",
+   "options": "Between Attendant and Entrant/Standby Person :"
+  },
+  {
+   "default": "0",
+   "fieldname": "phone",
+   "fieldtype": "Check",
+   "label": "Phone"
+  },
+  {
+   "default": "0",
+   "fieldname": "audible_signal",
+   "fieldtype": "Check",
+   "label": "Audible Signal"
+  },
+  {
+   "default": "0",
+   "fieldname": "radio",
+   "fieldtype": "Check",
+   "label": "Radio"
+  },
+  {
+   "default": "0",
+   "fieldname": "rope_signal",
+   "fieldtype": "Check",
+   "label": "Rope Signal"
+  },
+  {
+   "default": "0",
+   "fieldname": "others1",
+   "fieldtype": "Check",
+   "label": "Others"
+  },
+  {
+   "fieldname": "html_42",
+   "fieldtype": "HTML",
+   "options": "Between Attendant and Permit holder  :"
+  },
+  {
+   "default": "0",
+   "fieldname": "phone1",
+   "fieldtype": "Check",
+   "label": "Phone"
+  },
+  {
+   "default": "0",
+   "fieldname": "audible_signal1",
+   "fieldtype": "Check",
+   "label": "Audible Signal"
+  },
+  {
+   "default": "0",
+   "fieldname": "radio1",
+   "fieldtype": "Check",
+   "label": "Radio"
+  },
+  {
+   "default": "0",
+   "fieldname": "others2",
+   "fieldtype": "Check",
+   "label": "Others"
+  },
+  {
+   "depends_on": "eval:doc.others1",
+   "fieldname": "please_specify1",
+   "fieldtype": "Data",
+   "label": "Please Specify"
+  },
+  {
+   "depends_on": "eval:doc.others2",
+   "fieldname": "please_specify2",
+   "fieldtype": "Data",
+   "label": "Please Specify"
+  },
+  {
+   "fieldname": "html8",
+   "fieldtype": "HTML",
+   "options": "Between Permit holder and Asset Control Room  :"
+  },
+  {
+   "default": "0",
+   "fieldname": "phone2",
+   "fieldtype": "Check",
+   "label": "Phone"
+  },
+  {
+   "default": "0",
+   "fieldname": "audible_signal2",
+   "fieldtype": "Check",
+   "label": "Audible Signal"
+  },
+  {
+   "default": "0",
+   "fieldname": "radio2",
+   "fieldtype": "Check",
+   "label": "Radio"
+  },
+  {
+   "default": "0",
+   "fieldname": "others3",
+   "fieldtype": "Check",
+   "label": "Others"
+  },
+  {
+   "depends_on": "eval:doc.others3",
+   "fieldname": "please_specify3",
+   "fieldtype": "Data",
+   "label": "Please Specify"
+  },
+  {
+   "fieldname": "sec_br2",
+   "fieldtype": "Section Break",
+   "label": "Rescue Equipment Used"
+  },
+  {
+   "default": "0",
+   "fieldname": "port1",
+   "fieldtype": "Check",
+   "label": "Portable Hauling or Descend Control Device"
+  },
+  {
+   "depends_on": "eval:doc.pre",
+   "fieldname": "type1",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "pre",
+   "fieldtype": "Check",
+   "label": "Pre\u2010Rigged Rope &  Pulley System Kit"
+  },
+  {
+   "depends_on": "eval:doc.port1",
+   "fieldname": "type2",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "res_str",
+   "fieldtype": "Check",
+   "label": "Rescue Stretcher"
+  },
+  {
+   "default": "0",
+   "fieldname": "anchor_pt",
+   "fieldtype": "Check",
+   "label": "Anchor Point"
+  },
+  {
+   "depends_on": "eval:doc.res_str",
+   "fieldname": "type3",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "depends_on": "eval:doc.anchor_pt",
+   "fieldname": "type4",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "carabineers",
+   "fieldtype": "Check",
+   "label": "Carabineers"
+  },
+  {
+   "depends_on": "eval:doc.carabineers",
+   "fieldname": "type5",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "pulleys",
+   "fieldtype": "Check",
+   "label": "Pulleys"
+  },
+  {
+   "depends_on": "eval:doc.pulleys",
+   "fieldname": "type6",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "shock",
+   "fieldtype": "Check",
+   "label": "Shock absorbers/lanyards"
+  },
+  {
+   "depends_on": "eval:doc.shock",
+   "fieldname": "type7",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "strap",
+   "fieldtype": "Check",
+   "label": "Straps & Webbings"
+  },
+  {
+   "depends_on": "eval:doc.strap",
+   "fieldname": "type8",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "ascenders",
+   "fieldtype": "Check",
+   "label": "Ascenders:"
+  },
+  {
+   "depends_on": "eval:doc.ascenders",
+   "fieldname": "type9",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "body_harness",
+   "fieldtype": "Check",
+   "label": "Body Harnesses"
+  },
+  {
+   "depends_on": "eval:doc.body_harness",
+   "fieldname": "type10",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "ropes",
+   "fieldtype": "Check",
+   "label": "Ropes"
+  },
+  {
+   "depends_on": "eval:doc.ropes",
+   "fieldname": "type11",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "chemical_suits",
+   "fieldtype": "Check",
+   "label": "Chemical Suits"
+  },
+  {
+   "default": "0",
+   "fieldname": "any_other",
+   "fieldtype": "Check",
+   "label": "Any other Rescue Equipment Used?"
+  },
+  {
+   "depends_on": "eval:doc.chemical_suits",
+   "fieldname": "type12",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "depends_on": "eval:doc.any_other",
+   "fieldname": "type13",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fieldname": "html_83",
+   "fieldtype": "HTML",
+   "options": "Rescue Equipment Inventory Specification & Inspection Report(s) Attached to activity Emergency Response\nProcedure? "
+  },
+  {
+   "default": "0",
+   "fieldname": "yes2",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no2",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "fieldname": "sec_br_7",
+   "fieldtype": "Section Break",
+   "label": "Respiratory Protection Equipment and Gas Testing Used"
+  },
+  {
+   "default": "0",
+   "fieldname": "first_aid",
+   "fieldtype": "Check",
+   "label": "Self\u2010Contained Breathing Apparatus \u2013 SCBA"
+  },
+  {
+   "depends_on": "eval:doc.first_aid",
+   "fieldname": "type14",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "compressor",
+   "fieldtype": "Check",
+   "label": "Compressor/Cascade Supplied Airline Systems"
+  },
+  {
+   "depends_on": "eval:doc.compressor",
+   "fieldname": "type15",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "respirators",
+   "fieldtype": "Check",
+   "label": " Respirators/Masks"
+  },
+  {
+   "default": "0",
+   "fieldname": "gas_detector",
+   "fieldtype": "Check",
+   "label": "Gas Detector"
+  },
+  {
+   "depends_on": "eval:doc.respirators",
+   "fieldname": "type16",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "depends_on": "eval:doc.gas_detector",
+   "fieldname": "type17",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fieldname": "sec_br8",
+   "fieldtype": "Section Break",
+   "label": "Medical Equipment Used"
+  },
+  {
+   "default": "0",
+   "fieldname": "first_aid_kit",
+   "fieldtype": "Check",
+   "label": "First Aid Kit"
+  },
+  {
+   "depends_on": "eval:doc.first_aid_kit",
+   "fieldname": "type18",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "defibrillator",
+   "fieldtype": "Check",
+   "label": "Defibrillator"
+  },
+  {
+   "depends_on": "eval:doc.defibrillator",
+   "fieldname": "type19",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "adjustable",
+   "fieldtype": "Check",
+   "label": "Adjustable Cervical Collar"
+  },
+  {
+   "depends_on": "eval:doc.adjustable",
+   "fieldname": "type20",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "any_other1",
+   "fieldtype": "Check",
+   "label": "Any other Medical  Equipment Used?"
+  },
+  {
+   "depends_on": "eval:doc.any_other1",
+   "fieldname": "type21",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fieldname": "sec_br10",
+   "fieldtype": "Section Break",
+   "label": "Confined Space Rescue Layout Plan"
+  },
+  {
+   "fieldname": "html12",
+   "fieldtype": "HTML",
+   "options": "Top View or Side View indicating the confined space area, setup/staging of rescue equipment, rescue pathway\netc. (Use of CAD As built drawings recommended)"
+  },
+  {
+   "fieldname": "img",
+   "fieldtype": "Image",
+   "options": "img1"
+  },
+  {
+   "fieldname": "img1",
+   "fieldtype": "Attach"
+  },
+  {
+   "fieldname": "rescue_activity_summary",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Rescue Activity Sequence Summary"
+  },
+  {
+   "fieldname": "sec_br12",
+   "fieldtype": "Section Break",
+   "label": "Emergency Response Roles"
+  },
+  {
+   "fieldname": "rescuers",
+   "fieldtype": "Table",
+   "label": "Rescuers",
+   "options": "Rescuer  List"
+  },
+  {
+   "fieldname": "sec_br13",
+   "fieldtype": "Section Break",
+   "label": "Rescue Plan Approvals & Endorsement Section"
+  },
+  {
+   "fieldname": "approver",
+   "fieldtype": "Link",
+   "label": "Approver",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "approver.employee_name",
+   "fieldname": "name3",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Attach",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "approval_date",
+   "fieldtype": "Date",
+   "label": "Approval Date"
+  },
+  {
+   "fieldname": "cse_class",
+   "fieldtype": "Link",
+   "label": "CSE Class",
+   "options": "CSE Class"
+  },
+  {
+   "fieldname": "cl_br20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cl_br30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sec_br25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cl_br31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cl_br32",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cl_br34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Confined Space Rescue Plan",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "CSE Training",
+   "link_fieldname": "csrp"
+  },
+  {
+   "link_doctype": "CSE Certificate",
+   "link_fieldname": "confined_space"
+  }
+ ],
+ "modified": "2023-10-10 22:59:47.484491",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "Confined Space Rescue Plan",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

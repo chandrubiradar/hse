@@ -1,0 +1,102 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-29 15:18:46.826585",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "contract_number",
+  "contract_holder",
+  "cl_br",
+  "contract_description",
+  "sec_br",
+  "location_or_asset",
+  "loc_or_ass",
+  "scope",
+  "hra_objective",
+  "bussiness_partner"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "contract_number",
+   "fieldtype": "Data",
+   "label": "Contract Number"
+  },
+  {
+   "fieldname": "contract_holder",
+   "fieldtype": "Data",
+   "label": "Contract Holder"
+  },
+  {
+   "fieldname": "contract_description",
+   "fieldtype": "Small Text",
+   "label": "Contract Description"
+  },
+  {
+   "fieldname": "location_or_asset",
+   "fieldtype": "Link",
+   "label": "Location/Asset",
+   "options": "DocType"
+  },
+  {
+   "depends_on": "eval:doc.location_or_asset",
+   "fieldname": "loc_or_ass",
+   "fieldtype": "Dynamic Link",
+   "label": "Location/Asset Name",
+   "options": "location_or_asset"
+  },
+  {
+   "fieldname": "scope",
+   "fieldtype": "Small Text",
+   "label": "Scope"
+  },
+  {
+   "fieldname": "hra_objective",
+   "fieldtype": "Small Text",
+   "label": "HRA Objectives"
+  },
+  {
+   "fieldname": "bussiness_partner",
+   "fieldtype": "Data",
+   "label": "Bussiness Partner"
+  },
+  {
+   "fieldname": "cl_br",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sec_br",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-29 15:48:07.388505",
+ "modified_by": "Administrator",
+ "module": "Hse",
+ "name": "SCOT Dneck",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
